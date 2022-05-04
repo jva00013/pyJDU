@@ -1,0 +1,793 @@
+{
+  "categories": [
+    "Cap",
+    "Custom1",
+    "Custom2",
+    "Custom3",
+    "Custom",
+    "Ear",
+    "Glasses",
+    "Gloves",
+    "Mouth",
+    "Necklace",
+    "Beard",
+    "Shirt",
+    "Wraist",
+    "Pants",
+    "Shoes",
+    "Face",
+    "Hair",
+    "Eyes",
+    "Sockets"
+  ],
+  "types": [
+    "Cabeza",
+    "Torso",
+    "Pantalones",
+    "Pies",
+    "Accesorios",
+    "EasterEgg"
+  ],
+  "images": [
+    {
+      "name": "afeitao.png",
+      "category": 10,
+      "type": 0
+    },
+    {
+      "name": "barba-.png",
+      "category": 10,
+      "type": 0
+    },
+    {
+      "name": "finzo-2.png",
+      "category": 10,
+      "type": 0
+    },
+    {
+      "name": "perilla.png",
+      "category": 10,
+      "type": 0
+    },
+    {
+      "name": "corte-ceja.png",
+      "category": 17,
+      "type": 0
+    },
+    {
+      "name": "ojos-1.png",
+      "category": 17,
+      "type": 0
+    },
+    {
+      "name": "ojos-2.png",
+      "category": 17,
+      "type": 0
+    },
+    {
+      "name": "blush.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "clown.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "edgy.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "it.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "makeup.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "nosebleed.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "trencita.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "andi.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "britney-2.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "coletita.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "coletitas.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "corto.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "manbun.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "rapado.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "rubia.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "rulos.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "suelto.png",
+      "category": 16,
+      "type": 0
+    },
+    {
+      "name": "boxeo-1.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "camo.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "cargo.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "cargo-b.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "creeper.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "finzo-0.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "galaxy.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "jeans.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "jeans-b.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "jogging-g.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "jogging-n.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "short-b.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "short-g.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "short-w.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "skirt-1.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "skirt-2.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "skirt-3.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "zig-zag.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "ahegao-shirt.png",
+      "category": 11,
+      "type": 2
+    },
+    {
+      "name": "botitas.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "boxeo-0.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "flops-b.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "flops-p.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "flops-w.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "mocasines.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "sneakers.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "1-black.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "1-gray.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "1-pink.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "1-white.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "2-black.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "2-gray.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "2-pink.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "2-white.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "3-black.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "3-gray.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "3-pink.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "3-white.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "fishnets.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "fishnets-purp.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "fishnets-red.png",
+      "category": 18,
+      "type": 3
+    },
+    {
+      "name": "ahegao-pants.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "band.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "britney-1.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "bugs.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "camisa-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "camisa-p.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "camisa-w.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "chaleco.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "crop-1.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "crop-2.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "danger.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "eggs.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "esland.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "funzo.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "gertrudis.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "gold.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "maid-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "maid-p.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "maze.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "medieval.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "musculosa-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "musculosa-n(2).png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "musculosa-n.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "navidad.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "neon.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "nesquirt.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "sekiro.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "shrimp.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "tshirt-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "tshirt-w.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "turtle-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "turtle-g.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "usera.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "vanpiro.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "vestido.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "window-b.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "window-p.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "window-w.png",
+      "category": 11,
+      "type": 1
+    },
+    {
+      "name": "A.png",
+      "category": 0,
+      "type": 4
+    },
+    {
+      "name": "conejito.png",
+      "category": 0,
+      "type": 4
+    },
+    {
+      "name": "cono.png",
+      "category": 0,
+      "type": 4
+    },
+    {
+      "name": "gorrita.png",
+      "category": 0,
+      "type": 4
+    },
+    {
+      "name": "princesa.png",
+      "category": 0,
+      "type": 4
+    },
+    {
+      "name": "auris.png",
+      "category": 4,
+      "type": 4
+    },
+    {
+      "name": "gatito.png",
+      "category": 4,
+      "type": 4
+    },
+    {
+      "name": "bebe-nuclear.png",
+      "category": 1,
+      "type": 4
+    },
+    {
+      "name": "doraemon.png",
+      "category": 1,
+      "type": 4
+    },
+    {
+      "name": "monito.png",
+      "category": 1,
+      "type": 4
+    },
+    {
+      "name": "tiritas-1.png",
+      "category": 1,
+      "type": 4
+    },
+    {
+      "name": "tiritas-2.png",
+      "category": 1,
+      "type": 4
+    },
+    {
+      "name": "blood.png",
+      "category": 2,
+      "type": 4
+    },
+    {
+      "name": "shibari.png",
+      "category": 2,
+      "type": 4
+    },
+    {
+      "name": "shibari-b.png",
+      "category": 2,
+      "type": 4
+    },
+    {
+      "name": "shibari-r.png",
+      "category": 2,
+      "type": 4
+    },
+    {
+      "name": "broccli.png",
+      "category": 3,
+      "type": 4
+    },
+    {
+      "name": "flor.png",
+      "category": 5,
+      "type": 4
+    },
+    {
+      "name": "sprout.png",
+      "category": 5,
+      "type": 4
+    },
+    {
+      "name": "heart.png",
+      "category": 6,
+      "type": 4
+    },
+    {
+      "name": "lennons.png",
+      "category": 6,
+      "type": 4
+    },
+    {
+      "name": "shades.png",
+      "category": 6,
+      "type": 4
+    },
+    {
+      "name": "alien.png",
+      "category": 6,
+      "type": 4
+    },
+    {
+      "name": "glasses.png",
+      "category": 6,
+      "type": 4
+    },
+    {
+      "name": "guantes-2.png",
+      "category": 7,
+      "type": 4
+    },
+    {
+      "name": "pulseras.png",
+      "category": 7,
+      "type": 4
+    },
+    {
+      "name": "vendas.png",
+      "category": 7,
+      "type": 4
+    },
+    {
+      "name": "guantes.png",
+      "category": 7,
+      "type": 4
+    },
+    {
+      "name": "gag.png",
+      "category": 8,
+      "type": 4
+    },
+    {
+      "name": "perlas.png",
+      "category": 9,
+      "type": 4
+    },
+    {
+      "name": "cadenita.png",
+      "category": 9,
+      "type": 4
+    },
+    {
+      "name": "cinto.png",
+      "category": 12,
+      "type": 4
+    },
+    {
+      "name": "cocinero.png",
+      "category": 2,
+      "type": 5
+    },
+    {
+      "name": "karmaggan.png",
+      "category": 3,
+      "type": 5
+    },
+    {
+      "name": "bolsa.png",
+      "category": 0,
+      "type": 5
+    },
+    {
+      "name": "peli.png",
+      "category": 11,
+      "type": 5
+    },
+    {
+      "name": "boca3.png",
+      "category": 8,
+      "type": 0
+    },
+    {
+      "name": "boca1.png",
+      "category": 8,
+      "type": 0
+    },
+    {
+      "name": "boca2.png",
+      "category": 8,
+      "type": 0
+    },
+    {
+      "name": "cejas3.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "cejas1.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "cejas2.png",
+      "category": 15,
+      "type": 0
+    },
+    {
+      "name": "ojos-3.png",
+      "category": 17,
+      "type": 0
+    },
+    {
+      "name": "latex2.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "latexp.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "short-s.png",
+      "category": 13,
+      "type": 2
+    },
+    {
+      "name": "jardinero.png",
+      "category": 2,
+      "type": 2
+    },
+    {
+      "name": "pantuflas.png",
+      "category": 14,
+      "type": 3
+    },
+    {
+      "name": "doraemon2.png",
+      "category": 11,
+      "type": 1
+    }
+  ]
+}
