@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="14">
+ <editorsettings>
+  <export target="../../../maps/DoneView.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="Images.tsx"/>
+ <objectgroup id="5" name="Background">
+  <object id="13" gid="5" x="0" y="640" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup id="3" name="ButtonBg">
+  <object id="10" gid="6" x="896" y="597.027" width="357.456" height="168.215"/>
+ </objectgroup>
+ <objectgroup id="2" name="Layer">
+  <object id="1" gid="1" x="917.027" y="576" width="323.005" height="125.504"/>
+  <object id="3" gid="3" x="0" y="640" width="768" height="1024"/>
+  <object id="8" gid="4" x="672" y="371.53" width="864" height="748.689"/>
+ </objectgroup>
+</map>
