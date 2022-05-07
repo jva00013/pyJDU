@@ -1,0 +1,100 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tmxmaps/TitleMap.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 0.03125
+        },
+        "#Images": {
+            "dynamicWrapping": true,
+            "scaleInEditor": 1
+        },
+        "DoneMap.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1077.2727272727273,
+                "y": 681.8181818181819
+            }
+        },
+        "DoneMap.tmx#Images": {
+            "scaleInDock": 0.03125,
+            "scaleInEditor": 0.06
+        },
+        "DressingImages.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 0.03125
+        },
+        "DressingMap.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 549.9999999999998,
+                "y": 184.848484848485
+            }
+        },
+        "Images.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.03125,
+            "scaleInEditor": 0.06
+        },
+        "tilesets/DressingImages.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.015625,
+            "scaleInEditor": 0.015625
+        },
+        "tilesets/TitleImages.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "tmxmaps/DressingMap.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 938,
+                "y": -296
+            }
+        },
+        "tmxmaps/Images.tsx": {
+            "scaleInDock": 1
+        },
+        "tmxmaps/TitleMap.tmx": {
+            "scale": 0.25,
+            "selectedLayer": -1,
+            "viewCenter": {
+                "x": 1228,
+                "y": 248
+            }
+        }
+    },
+    "last.exportedFilePath": "F:/TestingSoftware/Games/pyJDU/maps",
+    "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
+    "last.imagePath": "F:/TestingSoftware/Games/pyJDU/resources/interface/common",
+    "map.fixedSize": true,
+    "map.height": 30,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "tmxmaps/TitleMap.tmx"
+    ],
+    "project": "JDU.tiled-project",
+    "recentFiles": [
+        "tmxmaps/TitleMap.tmx",
+        "tmxmaps/DressingMap.tmx",
+        "tilesets/DressingImages.tsx",
+        "DoneMap.tmx",
+        "DressingMap.tmx",
+        "DressingImages.tsx",
+        "Images.tsx"
+    ],
+    "resizeMap.removeObjects": false,
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}

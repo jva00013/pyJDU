@@ -32,15 +32,15 @@
          "objects":[
                 {
                  "gid":6,
-                 "height":168.214533740983,
+                 "height":168.215,
                  "id":10,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":357.455884199589,
+                 "width":357.456,
                  "x":896,
-                 "y":597.026816717623
+                 "y":597.027
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -55,14 +55,14 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":125.503812283311,
+                 "height":125.504,
                  "id":1,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":323.005416271831,
-                 "x":917.026816717623,
+                 "width":323.005,
+                 "x":917.027,
                  "y":576
                 }, 
                 {
@@ -79,7 +79,7 @@
                 }, 
                 {
                  "gid":4,
-                 "height":748.688976770463,
+                 "height":748.689,
                  "id":8,
                  "name":"",
                  "rotation":0,
@@ -87,7 +87,7 @@
                  "visible":true,
                  "width":864,
                  "x":672,
-                 "y":371.529916371206
+                 "y":371.53
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -104,7 +104,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/config\/maps\/Done\/Images.tsx"
+         "source":"..\/config\/maps\/tilesets\/TitleImages.tsx"
         }],
  "tilewidth":32,
  "type":"map",

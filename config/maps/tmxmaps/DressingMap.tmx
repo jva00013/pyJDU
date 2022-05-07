@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="8" tileheight="8" infinite="0" nextlayerid="27" nextobjectid="42">
+ <editorsettings>
+  <export target="../../../maps/DressingView.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../tilesets/DressingImages.tsx"/>
+ <objectgroup id="2" name="background">
+  <object id="1" gid="19" x="0" y="240" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup id="6" name="cloth_background">
+  <object id="5" gid="15" x="0" y="239.826" width="1760" height="255.826"/>
+ </objectgroup>
+ <objectgroup id="4" name="jagger_shadow">
+  <object id="3" gid="21" x="96" y="240" width="628.686" height="1088"/>
+ </objectgroup>
+ <objectgroup id="3" name="jagger">
+  <object id="2" gid="20" x="96" y="240" width="628.686" height="1088"/>
+ </objectgroup>
+ <objectgroup id="7" name="ui_background">
+  <object id="6" gid="3" x="1056" y="-48" width="778.745" height="576"/>
+  <object id="24" gid="3" x="1168" y="98" width="665.272" height="120"/>
+ </objectgroup>
+ <objectgroup id="5" name="ui">
+  <object id="4" gid="6" x="64" y="-720" width="32" height="41.2632"/>
+  <object id="7" gid="12" x="1536" y="-656" width="341.852" height="160"/>
+  <object id="9" gid="4" x="1088" y="-80" width="704" height="512"/>
+  <object id="19" gid="7" x="1264" y="-640" width="42.6667" height="31.9294"/>
+  <object id="20" gid="2" x="1157.33" y="-640" width="41.8692" height="32"/>
+  <object id="21" gid="1" x="1320" y="-643.5" width="48" height="29.6978"/>
+  <object id="22" gid="16" x="1210.67" y="-640" width="34.6916" height="32"/>
+  <object id="23" gid="17" x="1104" y="-640" width="40.4341" height="32"/>
+  <object id="25" gid="14" x="1188" y="88" width="230.321" height="100"/>
+  <object id="26" gid="5" x="1448" y="88" width="225.697" height="100"/>
+  <object id="27" gid="13" x="1698" y="88" width="115.053" height="99.0903"/>
+ </objectgroup>
+ <objectgroup id="10" name="ui_cloth">
+  <object id="11" gid="10" x="1109.33" y="-362" width="120" height="213.333"/>
+  <object id="12" gid="10" x="1289.33" y="-362" width="120" height="213.333"/>
+  <object id="13" gid="10" x="1471.33" y="-363" width="120" height="213.333"/>
+  <object id="14" gid="10" x="1651.33" y="-363" width="120" height="213.333"/>
+  <object id="15" gid="10" x="1109.33" y="-96" width="120" height="213.333"/>
+  <object id="16" gid="10" x="1289.33" y="-96" width="120" height="213.333"/>
+  <object id="17" gid="10" x="1471.33" y="-97" width="120" height="213.333"/>
+  <object id="18" gid="10" x="1651.33" y="-97" width="120" height="213.333"/>
+ </objectgroup>
+</map>
