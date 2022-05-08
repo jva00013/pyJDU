@@ -1,10 +1,11 @@
 import arcade
 import pathlib
 
+from src.components.Actions import Actions
 from src.components.EggCounter import EggCounter
 from src.components.Inventory import Inventory
 from src.components.Jagger import Jagger
-from src.components.ToolbarCat import ToolbarCat
+from src.components.Toolbar import Toolbar
 from src.utils.scaling import Scaling
 from src.components.Tile import Tile
 
@@ -12,7 +13,8 @@ from src.components.Tile import Tile
 class DressingView(arcade.View):
     scene: arcade.Scene
     tile_map: arcade.TileMap
-    toolbar: ToolbarCat
+    toolbar: Toolbar
+    actions: Actions
     inventory: Inventory
     egg_counter: EggCounter
     jagger: Jagger
@@ -26,8 +28,6 @@ class DressingView(arcade.View):
         self.clear()
         self.scene.draw()
         self.egg_counter.draw()
-        for sprite_list in self.jagger.cloth_layers.values():
-            sprite_list.draw_hit_boxes()
 
     def setup(self):
         scale = Scaling.get_scale(self.window.width, self.window.height)
@@ -36,7 +36,8 @@ class DressingView(arcade.View):
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
 
         ui_sprites = self.scene.get_sprite_list("ui")
-        self.toolbar = ToolbarCat(ui_sprites, self)
+        self.toolbar = Toolbar(ui_sprites, self)
+        self.actions = Actions(ui_sprites, self)
 
         tile_sprites = [Tile(x) for x in self.scene.get_sprite_list("ui_tile")]
         self.inventory = Inventory(ui_sprites, tile_sprites, self)
@@ -52,6 +53,7 @@ class DressingView(arcade.View):
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
         self.toolbar.check_clicked((x, y))
         self.tile_dragged = self.inventory.check_clicked((x, y))
+        self.actions.check_clicked((x, y))
 
     def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
         if not self.tile_dragged:

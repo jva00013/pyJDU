@@ -105,7 +105,7 @@ class Inventory:
                 scene.add_sprite_list_after(layout_name, "jagger")
                 continue
             prev_layout_name = self.config.categories[index - 1]
-            scene.add_sprite_list_after(layout_name, prev_layout_name)
+            scene.add_sprite_list_before(layout_name, prev_layout_name)
 
     def setup(self, scene: arcade.Scene):
         self.load_config(scene)

@@ -50,8 +50,8 @@
                  "type":"",
                  "visible":true,
                  "width":628.686,
-                 "x":96,
-                 "y":1108
+                 "x":100,
+                 "y":1110
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -212,7 +212,7 @@
                  "id":25,
                  "name":"reset",
                  "rotation":0,
-                 "type":"",
+                 "type":"button",
                  "visible":true,
                  "width":230.321,
                  "x":1188,
@@ -224,7 +224,7 @@
                  "id":26,
                  "name":"done",
                  "rotation":0,
-                 "type":"",
+                 "type":"button",
                  "visible":true,
                  "width":225.697,
                  "x":1448,
@@ -236,7 +236,7 @@
                  "id":27,
                  "name":"random",
                  "rotation":0,
-                 "type":"",
+                 "type":"button",
                  "visible":true,
                  "width":115.053,
                  "x":1698,
@@ -266,7 +266,7 @@
                          "value":"list"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"button",
                  "visible":true,
                  "width":34.6743,
                  "x":64,
@@ -295,23 +295,6 @@
                  "width":32.7223,
                  "x":1850.12,
                  "y":556.576
-                }, 
-                {
-                 "height":19,
-                 "id":52,
-                 "name":"egg_counter",
-                 "rotation":0,
-                 "text":
-                    {
-                     "color":"#ffffff",
-                     "halign":"center",
-                     "text":"0\/4"
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":85,
-                 "x":40.5,
-                 "y":153.5
                 }],
          "opacity":1,
          "type":"objectgroup",

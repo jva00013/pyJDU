@@ -24,6 +24,10 @@ class Jagger:
         for category in self.cloth_layers:
             self.cloth_layers[category] = scene.get_sprite_list(category)
 
+    def clear(self):
+        for sprite_list in self.cloth_layers.values():
+            sprite_list.clear()
+
     def check_collision(self, tile: Tile):
         collision = arcade.check_for_collision(self.sprite, tile.sprite)
         if not collision:

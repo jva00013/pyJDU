@@ -3,7 +3,7 @@ from py_linq import Enumerable
 from src.views import DressingView
 
 
-class ToolbarCat:
+class Toolbar:
     sprite_list: arcade.SpriteList
     dressing_view: DressingView
 

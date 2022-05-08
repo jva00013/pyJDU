@@ -32,6 +32,6 @@ class PageSelector:
                 self.dressing_view.inventory.change_page(actual_page)
             case "next_page":
                 actual_page += 1
-                if actual_page == total_pages:
+                if actual_page > total_pages:
                     actual_page = 0
                 self.dressing_view.inventory.change_page(actual_page)
