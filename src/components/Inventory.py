@@ -7,8 +7,9 @@ import arcade
 from PIL import Image
 from py_linq import Enumerable
 
-from src.components.Tile import Tile
 from src.views import DressingView
+from src.components.PageSelector import PageSelector
+from src.components.Tile import Tile
 
 
 class DressingConfiguration:
@@ -38,7 +39,7 @@ class DressingConfiguration:
 class Inventory:
     config: DressingConfiguration
     dressing_view: DressingView
-    inventory_sprites: arcade.SpriteList
+    page_selector: PageSelector
     tiles: list[Tile]
     images: list[Image]
     actual_images: list[Image]
@@ -54,32 +55,14 @@ class Inventory:
         self.unlocked_eggs = 0
         self.dressing_view = dressing_view
         self.tiles = tiles
+        self.page_selector = PageSelector(ui_sprites, self.dressing_view)
 
-        sprites_filtered = Enumerable(ui_sprites) \
-            .where(lambda x: "type" in x.properties and x.properties["type"] == "inventory") \
-            .to_list()
-        self.inventory_sprites = arcade.SpriteList()
-        for sprite in sprites_filtered:
-            self.inventory_sprites.append(sprite)
-
-    def check_clicked(self, position: tuple[float, float]):
-        sprites_clicked = arcade.get_sprites_at_point(position, self.inventory_sprites)
-        if len(sprites_clicked) <= 0:
-            return
-
-        total_pages = self.total_pages
-        actual_page = self.actual_page
-        match sprites_clicked[0].properties["name"]:
-            case "previous_page":
-                actual_page -= 1
-                if actual_page < 0:
-                    actual_page = total_pages
-                self.change_page(actual_page)
-            case "next_page":
-                actual_page += 1
-                if actual_page == total_pages:
-                    actual_page = 0
-                self.change_page(actual_page)
+    def check_clicked(self, position: tuple[float, float]) -> None | Tile:
+        self.page_selector.check_clicked(position)
+        clicked_tile = Enumerable(self.tiles).first_or_default(lambda x: x.check_clicked(position))
+        if clicked_tile is None:
+            return None
+        return clicked_tile
 
     def change_page(self, page_number: int):
         self.actual_page = page_number
@@ -119,10 +102,10 @@ class Inventory:
 
         for index, layout_name in enumerate(self.config.categories):
             if index == 0:
-                scene.add_sprite_list_before(layout_name, "jagger")
+                scene.add_sprite_list_after(layout_name, "jagger")
                 continue
             prev_layout_name = self.config.categories[index - 1]
-            scene.add_sprite_list_before(layout_name, prev_layout_name)
+            scene.add_sprite_list_after(layout_name, prev_layout_name)
 
     def setup(self, scene: arcade.Scene):
         self.load_config(scene)

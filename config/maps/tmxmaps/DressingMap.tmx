@@ -9,7 +9,7 @@
   <object id="3" gid="21" x="96" y="1108" width="628.686" height="1088"/>
  </objectgroup>
  <objectgroup id="3" name="jagger">
-  <object id="2" name="base" gid="20" x="96" y="1108" width="628.686" height="1088"/>
+  <object id="2" name="base" gid="20" x="128" y="1110" width="628.686" height="1088"/>
  </objectgroup>
  <objectgroup id="10" name="ui_cloth">
   <object id="48" gid="23" x="2" y="1124" width="1728" height="259"/>
@@ -37,9 +37,6 @@
   </object>
   <object id="49" name="previous_page" type="inventory" gid="8" x="1010.67" y="556.333" width="30.2366" height="37"/>
   <object id="50" name="next_page" type="inventory" gid="9" x="1850.12" y="556.576" width="32.7223" height="40.5757"/>
-  <object id="52" name="egg_counter" x="40.5" y="153.5" width="85" height="19">
-   <text color="#ffffff" halign="center">0/4</text>
-  </object>
  </objectgroup>
  <objectgroup id="27" name="ui_tile">
   <object id="11" gid="10" x="1109.33" y="506" width="120" height="213.333"/>
