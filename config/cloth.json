@@ -1,6 +1,5 @@
 {
   "categories": [
-    "Skirt",
     "Cap",
     "Custom1",
     "Custom2",
@@ -207,32 +206,32 @@
     },
     {
       "name": "short-b.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
       "name": "short-g.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
       "name": "short-w.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
       "name": "skirt-1.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
       "name": "skirt-2.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
       "name": "skirt-3.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {
@@ -772,7 +771,7 @@
     },
     {
       "name": "short-s.png",
-      "category": "Skirt",
+      "category": "Pants",
       "type": "Pantalones"
     },
     {

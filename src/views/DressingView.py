@@ -1,3 +1,4 @@
+import arcade.gui
 import arcade
 import pathlib
 
@@ -17,6 +18,7 @@ class DressingView(arcade.View):
     actions: Actions
     inventory: Inventory
     egg_counter: EggCounter
+    manager: arcade.gui.UIManager
     jagger: Jagger
     tile_dragged: Tile | None
 
@@ -28,6 +30,10 @@ class DressingView(arcade.View):
         self.clear()
         self.scene.draw()
         self.egg_counter.draw()
+        self.manager.draw()
+
+    def on_update(self, delta_time: float):
+        self.egg_counter.check_easters()
 
     def setup(self):
         scale = Scaling.get_scale(self.window.width, self.window.height)
@@ -47,13 +53,18 @@ class DressingView(arcade.View):
         self.jagger = Jagger(self.inventory.config.categories, self.inventory.config.images)
         self.jagger.setup(self.scene)
 
+        self.manager = arcade.gui.UIManager()
+        self.manager.enable()
+
         arcade.load_font(pathlib.Path("resources/fonts/Liminality-Regular.ttf"))
         self.egg_counter = EggCounter(ui_sprites, self)
 
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
-        self.toolbar.check_clicked((x, y))
-        self.tile_dragged = self.inventory.check_clicked((x, y))
-        self.actions.check_clicked((x, y))
+        position = (x, y)
+        self.toolbar.check_clicked(position)
+        self.tile_dragged = self.inventory.check_clicked(position)
+        self.actions.check_clicked(position)
+        self.egg_counter.check_clicked(position)
 
     def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
         if not self.tile_dragged:

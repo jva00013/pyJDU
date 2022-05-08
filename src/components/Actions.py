@@ -1,7 +1,7 @@
 from src.views import DressingView
 from py_linq import Enumerable
 import arcade
-
+import random
 
 class Actions:
     buttons_sprites = arcade.SpriteList
@@ -29,7 +29,22 @@ class Actions:
                 pass
 
             case "random":
-                pass
+                # Amount of categories to select
+                len_categories = len(self.dressing_view.inventory.config.categories) - 1
+                categories_count = random.randint(0, len_categories)
+                for _ in range(categories_count):
+                    category_index = random.randint(0, len_categories)
+                    category_name = self.dressing_view.inventory.config.categories[category_index]
+                    images_from_category = Enumerable(self.dressing_view.inventory.config.images)\
+                        .where(lambda x: x.category == category_name)\
+                        .select(lambda x: x.name)\
+                        .to_list()
+
+                    random_image_index = random.randint(0, len(images_from_category) - 1)
+                    image_name = images_from_category[random_image_index]
+
+                    image = Enumerable(self.dressing_view.inventory.images).first(lambda x: image_name in x.filename)
+                    self.dressing_view.jagger.set_cloth(image, category_name)
 
             case "list":
                 pass
