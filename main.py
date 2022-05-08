@@ -1,5 +1,5 @@
 import arcade
-from src.views import TitleView
+from src.views import TitleView, DressingView
 from time import time
 
 class Game:
@@ -10,12 +10,9 @@ class Game:
 
     def run(self):
         arcade.set_background_color((255, 181, 253))
-        title_view = TitleView()
-        t0 = time()
-        title_view.setup()
-        t1 = time()
-        print(f"Setup first view: {t1-t0}")
+        title_view = DressingView()
         self.game_window.show_view(title_view)
+        title_view.setup()
         self.game_window.run()
 
 
