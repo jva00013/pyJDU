@@ -1,5 +1,6 @@
 {
   "categories": [
+    "Skirt",
     "Cap",
     "Custom1",
     "Custom2",
@@ -31,763 +32,763 @@
   "images": [
     {
       "name": "afeitao.png",
-      "category": 10,
-      "type": 0
+      "category": "Beard",
+      "type": "Cabeza"
     },
     {
       "name": "barba-.png",
-      "category": 10,
-      "type": 0
+      "category": "Beard",
+      "type": "Cabeza"
     },
     {
       "name": "finzo-2.png",
-      "category": 10,
-      "type": 0
+      "category": "Beard",
+      "type": "Cabeza"
     },
     {
       "name": "perilla.png",
-      "category": 10,
-      "type": 0
+      "category": "Beard",
+      "type": "Cabeza"
     },
     {
       "name": "corte-ceja.png",
-      "category": 17,
-      "type": 0
+      "category": "Eyes",
+      "type": "Cabeza"
     },
     {
       "name": "ojos-1.png",
-      "category": 17,
-      "type": 0
+      "category": "Eyes",
+      "type": "Cabeza"
     },
     {
       "name": "ojos-2.png",
-      "category": 17,
-      "type": 0
+      "category": "Eyes",
+      "type": "Cabeza"
     },
     {
       "name": "blush.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "clown.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "edgy.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "it.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "makeup.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "nosebleed.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "trencita.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "andi.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "britney-2.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "coletita.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "coletitas.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "corto.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "manbun.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "rapado.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "rubia.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "rulos.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "suelto.png",
-      "category": 16,
-      "type": 0
+      "category": "Hair",
+      "type": "Cabeza"
     },
     {
       "name": "boxeo-1.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "camo.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "cargo.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "cargo-b.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "creeper.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "finzo-0.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "galaxy.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "jeans.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "jeans-b.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "jogging-g.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "jogging-n.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "short-b.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "short-g.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "short-w.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "skirt-1.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "skirt-2.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "skirt-3.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "zig-zag.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "ahegao-shirt.png",
-      "category": 11,
-      "type": 2
+      "category": "Shirt",
+      "type": "Pantalones"
     },
     {
       "name": "botitas.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "boxeo-0.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "flops-b.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "flops-p.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "flops-w.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "mocasines.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "sneakers.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "1-black.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "1-gray.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "1-pink.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "1-white.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "2-black.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "2-gray.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "2-pink.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "2-white.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "3-black.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "3-gray.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "3-pink.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "3-white.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "fishnets.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "fishnets-purp.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "fishnets-red.png",
-      "category": 18,
-      "type": 3
+      "category": "Sockets",
+      "type": "Pies"
     },
     {
       "name": "ahegao-pants.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "band.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "britney-1.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "bugs.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "camisa-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "camisa-p.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "camisa-w.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "chaleco.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "crop-1.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "crop-2.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "danger.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "eggs.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "esland.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "funzo.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "gertrudis.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "gold.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "maid-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "maid-p.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "maze.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "medieval.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "musculosa-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "musculosa-n(2).png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "musculosa-n.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "navidad.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "neon.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "nesquirt.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "sekiro.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "shrimp.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "tshirt-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "tshirt-w.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "turtle-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "turtle-g.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "usera.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "vanpiro.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "vestido.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "window-b.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "window-p.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "window-w.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     },
     {
       "name": "A.png",
-      "category": 0,
-      "type": 4
+      "category": "Cap",
+      "type": "Accesorios"
     },
     {
       "name": "conejito.png",
-      "category": 0,
-      "type": 4
+      "category": "Cap",
+      "type": "Accesorios"
     },
     {
       "name": "cono.png",
-      "category": 0,
-      "type": 4
+      "category": "Cap",
+      "type": "Accesorios"
     },
     {
       "name": "gorrita.png",
-      "category": 0,
-      "type": 4
+      "category": "Cap",
+      "type": "Accesorios"
     },
     {
       "name": "princesa.png",
-      "category": 0,
-      "type": 4
+      "category": "Cap",
+      "type": "Accesorios"
     },
     {
       "name": "auris.png",
-      "category": 4,
-      "type": 4
+      "category": "Custom",
+      "type": "Accesorios"
     },
     {
       "name": "gatito.png",
-      "category": 4,
-      "type": 4
+      "category": "Custom",
+      "type": "Accesorios"
     },
     {
       "name": "bebe-nuclear.png",
-      "category": 1,
-      "type": 4
+      "category": "Custom1",
+      "type": "Accesorios"
     },
     {
       "name": "doraemon.png",
-      "category": 1,
-      "type": 4
+      "category": "Custom1",
+      "type": "Accesorios"
     },
     {
       "name": "monito.png",
-      "category": 1,
-      "type": 4
+      "category": "Custom1",
+      "type": "Accesorios"
     },
     {
       "name": "tiritas-1.png",
-      "category": 1,
-      "type": 4
+      "category": "Custom1",
+      "type": "Accesorios"
     },
     {
       "name": "tiritas-2.png",
-      "category": 1,
-      "type": 4
+      "category": "Custom1",
+      "type": "Accesorios"
     },
     {
       "name": "blood.png",
-      "category": 2,
-      "type": 4
+      "category": "Custom2",
+      "type": "Accesorios"
     },
     {
       "name": "shibari.png",
-      "category": 2,
-      "type": 4
+      "category": "Custom2",
+      "type": "Accesorios"
     },
     {
       "name": "shibari-b.png",
-      "category": 2,
-      "type": 4
+      "category": "Custom2",
+      "type": "Accesorios"
     },
     {
       "name": "shibari-r.png",
-      "category": 2,
-      "type": 4
+      "category": "Custom2",
+      "type": "Accesorios"
     },
     {
       "name": "broccli.png",
-      "category": 3,
-      "type": 4
+      "category": "Custom3",
+      "type": "Accesorios"
     },
     {
       "name": "flor.png",
-      "category": 5,
-      "type": 4
+      "category": "Ear",
+      "type": "Accesorios"
     },
     {
       "name": "sprout.png",
-      "category": 5,
-      "type": 4
+      "category": "Ear",
+      "type": "Accesorios"
     },
     {
       "name": "heart.png",
-      "category": 6,
-      "type": 4
+      "category": "Glasses",
+      "type": "Accesorios"
     },
     {
       "name": "lennons.png",
-      "category": 6,
-      "type": 4
+      "category": "Glasses",
+      "type": "Accesorios"
     },
     {
       "name": "shades.png",
-      "category": 6,
-      "type": 4
+      "category": "Glasses",
+      "type": "Accesorios"
     },
     {
       "name": "alien.png",
-      "category": 6,
-      "type": 4
+      "category": "Glasses",
+      "type": "Accesorios"
     },
     {
       "name": "glasses.png",
-      "category": 6,
-      "type": 4
+      "category": "Glasses",
+      "type": "Accesorios"
     },
     {
       "name": "guantes-2.png",
-      "category": 7,
-      "type": 4
+      "category": "Gloves",
+      "type": "Accesorios"
     },
     {
       "name": "pulseras.png",
-      "category": 7,
-      "type": 4
+      "category": "Gloves",
+      "type": "Accesorios"
     },
     {
       "name": "vendas.png",
-      "category": 7,
-      "type": 4
+      "category": "Gloves",
+      "type": "Accesorios"
     },
     {
       "name": "guantes.png",
-      "category": 7,
-      "type": 4
+      "category": "Gloves",
+      "type": "Accesorios"
     },
     {
       "name": "gag.png",
-      "category": 8,
-      "type": 4
+      "category": "Mouth",
+      "type": "Accesorios"
     },
     {
       "name": "perlas.png",
-      "category": 9,
-      "type": 4
+      "category": "Necklace",
+      "type": "Accesorios"
     },
     {
       "name": "cadenita.png",
-      "category": 9,
-      "type": 4
+      "category": "Necklace",
+      "type": "Accesorios"
     },
     {
       "name": "cinto.png",
-      "category": 12,
-      "type": 4
+      "category": "Wraist",
+      "type": "Accesorios"
     },
     {
       "name": "cocinero.png",
-      "category": 2,
-      "type": 5
+      "category": "Custom2",
+      "type": "EasterEgg"
     },
     {
       "name": "karmaggan.png",
-      "category": 3,
-      "type": 5
+      "category": "Custom3",
+      "type": "EasterEgg"
     },
     {
       "name": "bolsa.png",
-      "category": 0,
-      "type": 5
+      "category": "Cap",
+      "type": "EasterEgg"
     },
     {
       "name": "peli.png",
-      "category": 11,
-      "type": 5
+      "category": "Shirt",
+      "type": "EasterEgg"
     },
     {
       "name": "boca3.png",
-      "category": 8,
-      "type": 0
+      "category": "Mouth",
+      "type": "Cabeza"
     },
     {
       "name": "boca1.png",
-      "category": 8,
-      "type": 0
+      "category": "Mouth",
+      "type": "Cabeza"
     },
     {
       "name": "boca2.png",
-      "category": 8,
-      "type": 0
+      "category": "Mouth",
+      "type": "Cabeza"
     },
     {
       "name": "cejas3.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "cejas1.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "cejas2.png",
-      "category": 15,
-      "type": 0
+      "category": "Face",
+      "type": "Cabeza"
     },
     {
       "name": "ojos-3.png",
-      "category": 17,
-      "type": 0
+      "category": "Eyes",
+      "type": "Cabeza"
     },
     {
       "name": "latex2.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "latexp.png",
-      "category": 13,
-      "type": 2
+      "category": "Pants",
+      "type": "Pantalones"
     },
     {
       "name": "short-s.png",
-      "category": 13,
-      "type": 2
+      "category": "Skirt",
+      "type": "Pantalones"
     },
     {
       "name": "jardinero.png",
-      "category": 2,
-      "type": 2
+      "category": "Custom2",
+      "type": "Pantalones"
     },
     {
       "name": "pantuflas.png",
-      "category": 14,
-      "type": 3
+      "category": "Shoes",
+      "type": "Pies"
     },
     {
       "name": "doraemon2.png",
-      "category": 11,
-      "type": 1
+      "category": "Shirt",
+      "type": "Torso"
     }
   ]
 }

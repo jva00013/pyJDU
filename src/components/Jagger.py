@@ -34,7 +34,7 @@ class Jagger:
             return
         cloth_configuration: DressingConfiguration.ClothConfiguration = Enumerable(self.cloth_configuration) \
             .first_or_default(lambda x: x.name == tile.name)
-        category_name = self.categories[cloth_configuration.category]
+        category_name = cloth_configuration.category
         sprite_list = self.cloth_layers[category_name]
         sprite_list.clear()
         sprite = arcade.Sprite(texture=arcade.Texture(tile.name, tile.original_image, hit_box_algorithm="None"))

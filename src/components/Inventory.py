@@ -15,8 +15,8 @@ from src.components.Tile import Tile
 class DressingConfiguration:
     class ClothConfiguration:
         name: str
-        category: int
-        type: int
+        category: str
+        type: str
 
         def __init__(self, data: dict):
             self.name = data["name"]
@@ -75,9 +75,8 @@ class Inventory:
 
     def change_cloth_type(self, cloth_type: str):
         self.actual_page = 0
-        cloth_index = self.config.types.index(cloth_type)
         images_name: list[str] = Enumerable(self.config.images) \
-            .where(lambda x: x.type == cloth_index) \
+            .where(lambda x: x.type == cloth_type) \
             .select(lambda x: x.name) \
             .to_list()
 
