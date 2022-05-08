@@ -6,11 +6,13 @@ class Tile:
     sprite: arcade.Sprite
     original_size: tuple[float, float]
     original_aspect_ratio: float
+    original_position: tuple[float, float]
 
     def __init__(self, sprite: arcade.Sprite):
         self.sprite = sprite
         self.original_size = (sprite.width, sprite.height)
         self.original_aspect_ratio = sprite.width / sprite.height
+        self.original_position = sprite.position
 
     def set_image(self, image: Image):
         bounding_box = image.getbbox()

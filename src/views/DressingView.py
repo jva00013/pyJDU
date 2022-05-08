@@ -21,6 +21,7 @@ class DressingView(arcade.View):
     def on_draw(self):
         self.clear()
         self.scene.draw()
+        self.egg_counter.draw()
 
     def setup(self):
         scale = Scaling.get_scale(self.window.width, self.window.height)
