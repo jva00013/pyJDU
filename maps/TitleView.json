@@ -4,43 +4,20 @@
  "layers":[
         {
          "draworder":"topdown",
-         "id":5,
-         "name":"Background",
-         "objects":[
-                {
-                 "gid":5,
-                 "height":1080,
-                 "id":13,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":1920,
-                 "x":0,
-                 "y":640
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":3,
+         "id":6,
          "name":"ButtonBg",
          "objects":[
                 {
-                 "gid":6,
-                 "height":168.215,
-                 "id":10,
+                 "gid":7,
+                 "height":166.843137254902,
+                 "id":21,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":357.456,
-                 "x":896,
-                 "y":597.027
+                 "width":336,
+                 "x":952,
+                 "y":1070.66666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -55,15 +32,15 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":125.504,
+                 "height":119.418957575758,
                  "id":1,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":323.005,
-                 "x":917.027,
-                 "y":576
+                 "width":301.992490909091,
+                 "x":966.249933333333,
+                 "y":1048.0303030303
                 }, 
                 {
                  "gid":3,
@@ -75,7 +52,7 @@
                  "visible":true,
                  "width":768,
                  "x":0,
-                 "y":640
+                 "y":1100
                 }, 
                 {
                  "gid":4,
@@ -86,8 +63,8 @@
                  "type":"",
                  "visible":true,
                  "width":864,
-                 "x":672,
-                 "y":371.53
+                 "x":692.242424242424,
+                 "y":883.030303030303
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -95,18 +72,18 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
- "nextobjectid":14,
+ "nextlayerid":7,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.4",
- "tileheight":32,
+ "tileheight":55,
  "tilesets":[
         {
          "firstgid":1,
          "source":"..\/config\/maps\/tilesets\/TitleImages.tsx"
         }],
- "tilewidth":32,
+ "tilewidth":64,
  "type":"map",
  "version":"1.8",
  "width":30

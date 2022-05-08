@@ -32,6 +32,7 @@ class DressingView(arcade.View):
     scene: arcade.Scene
     tile_map: arcade.TileMap
     config: DressingConfiguration
+    shirt: arcade.SpriteList
 
     def __init__(self):
         super().__init__()
@@ -43,13 +44,19 @@ class DressingView(arcade.View):
     def setup(self):
         map_path = pathlib.Path("maps/DressingView.json")
         scale = Scaling.get_scale(self.window.width, self.window.height)
-        self.tile_map = arcade.load_tilemap(map_path, scale)
+        self.tile_map = arcade.load_tilemap(map_path, scaling=scale, hit_box_algorithm="None")
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
         # self._setup_dress_layers()
+        self.shirt = self.scene.get_sprite_list("shirt")
+
+    def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
+        shirt_clicked = arcade.get_sprites_at_point((x, y), self.shirt)
+        if len(shirt_clicked) > 0:
+            print("Shirt clicked")
 
     def _setup_dress_layers(self):
         with open(pathlib.Path("config/cloth.json"), "r") as file:
-            data = json.loads(file)
+            data = json.load(file)
             self.config = DressingConfiguration(data)
 
         for index, layout_name in enumerate(self.config.categories):

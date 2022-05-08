@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="14">
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="64" tileheight="55" infinite="0" nextlayerid="7" nextobjectid="22">
  <editorsettings>
   <export target="../../../maps/TitleView.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="../tilesets/TitleImages.tsx"/>
- <objectgroup id="5" name="Background">
-  <object id="13" gid="5" x="0" y="640" width="1920" height="1080"/>
- </objectgroup>
- <objectgroup id="3" name="ButtonBg">
-  <object id="10" gid="6" x="896" y="597.027" width="357.456" height="168.215"/>
+ <objectgroup id="6" name="ButtonBg">
+  <object id="21" gid="7" x="952" y="1070.67" width="336" height="166.843"/>
  </objectgroup>
  <objectgroup id="2" name="Layer">
-  <object id="1" gid="1" x="917.027" y="576" width="323.005" height="125.504"/>
-  <object id="3" gid="3" x="0" y="640" width="768" height="1024"/>
-  <object id="8" gid="4" x="672" y="371.53" width="864" height="748.689"/>
+  <object id="1" gid="1" x="966.25" y="1048.03" width="301.992" height="119.419"/>
+  <object id="3" gid="3" x="0" y="1100" width="768" height="1024"/>
+  <object id="8" gid="4" x="692.242" y="883.03" width="864" height="748.689"/>
  </objectgroup>
 </map>
