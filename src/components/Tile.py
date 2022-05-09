@@ -4,6 +4,8 @@ import pathlib
 import arcade
 from PIL import Image
 
+from src.views import DressingView
+
 
 class Tile:
     sprite: arcade.Sprite
@@ -12,10 +14,12 @@ class Tile:
     original_position: tuple[float, float]
     original_hit_box: arcade.PointList
     original_image: Image
+    dressing_view: DressingView
     name: str
 
-    def __init__(self, sprite: arcade.Sprite):
+    def __init__(self, sprite: arcade.Sprite, dressing_view: DressingView):
         self.sprite = sprite
+        self.dressing_view = dressing_view
         self.original_size = (sprite.width, sprite.height)
         self.original_aspect_ratio = sprite.width / sprite.height
         self.original_position = (sprite.center_x, sprite.center_y)
@@ -37,13 +41,16 @@ class Tile:
         self.sprite.width, self.sprite.height = (original_width, image_height * original_width / image_width)
         self.sprite.set_hit_box(self.original_hit_box)
 
-    def check_clicked(self, position: tuple[float, float]) -> bool:
+    def check_clicked(self, position: tuple[float, float], button: int) -> bool:
         sprite_list = arcade.SpriteList()
         sprite_list.append(self.sprite)
         clicked_tile = arcade.get_sprites_at_point(position, sprite_list)
         if len(clicked_tile) <= 0:
             return False
-        return True
+        if button == arcade.MOUSE_BUTTON_LEFT:
+            return True
+        self.dressing_view.jagger.remove_cloth(self.name)
+        return False
 
     def restart_position(self):
         self.sprite.center_x, self.sprite.center_y = self.original_position

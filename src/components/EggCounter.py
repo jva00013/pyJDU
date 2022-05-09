@@ -43,7 +43,7 @@ class EggCounter:
             width=300,
             height=200,
             message_text=(
-                "Personas por hacer:\n"
+                "Outfits para hacer:\n"
                 f"[{gertrudis}] Gertrudis\n"
                 f"[{andiamo}] Andiamo\n"
                 f"[{funzo}] Funzo\n"

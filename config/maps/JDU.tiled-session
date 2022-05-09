@@ -46,7 +46,7 @@
         },
         "tilesets/DoneImages.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1,
+            "scaleInDock": 0.0625,
             "scaleInEditor": 0.125
         },
         "tilesets/DressingImages.tsx": {
@@ -68,11 +68,11 @@
             }
         },
         "tmxmaps/DressingMap.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 2,
+            "scale": 0.33,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 660,
-                "y": 456
+                "x": 1224.2424242424242,
+                "y": 642.4242424242425
             }
         },
         "tmxmaps/Images.tsx": {
@@ -101,9 +101,10 @@
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
-        "tilesets/DoneImages.tsx",
-        "tmxmaps/DressingMap.tmx",
         "tilesets/DressingImages.tsx",
+        "tmxmaps/DressingMap.tmx",
+        "tmxmaps/DoneMap.tmx",
+        "tilesets/DoneImages.tsx",
         "tilesets/TitleImages.tsx",
         "tmxmaps/TitleMap.tmx",
         "DoneMap.tmx",

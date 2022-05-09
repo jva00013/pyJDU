@@ -45,7 +45,7 @@ class DressingView(arcade.View):
         self.toolbar = Toolbar(ui_sprites, self)
         self.actions = Actions(ui_sprites, self)
 
-        tile_sprites = [Tile(x) for x in self.scene.get_sprite_list("ui_tile")]
+        tile_sprites = [Tile(x, self) for x in self.scene.get_sprite_list("ui_tile")]
         self.inventory = Inventory(ui_sprites, tile_sprites, self)
         self.inventory.setup(self.scene)
         self.inventory.change_cloth_type(self.inventory.config.types[0])
@@ -62,7 +62,7 @@ class DressingView(arcade.View):
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
         position = (x, y)
         self.toolbar.check_clicked(position)
-        self.tile_dragged = self.inventory.check_clicked(position)
+        self.tile_dragged = self.inventory.check_clicked(position, button)
         self.actions.check_clicked(position)
         self.egg_counter.check_clicked(position)
 

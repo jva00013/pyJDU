@@ -38,6 +38,16 @@ class Jagger:
         sprite.height = self.sprite.height
         sprite_list.append(sprite)
 
+    def get_cloth_configuration(self, tilename: str) -> DressingConfiguration.ClothConfiguration:
+        return Enumerable(self.cloth_configuration) \
+            .first_or_default(lambda x: x.name == tilename)
+
+    def remove_cloth(self, name: str):
+        cloth_configuration = self.get_cloth_configuration(name)
+        category_name = cloth_configuration.category
+        sprite_list = self.cloth_layers[category_name]
+        sprite_list.clear()
+
     def check_if_cloth_present(self, name: str) -> bool:
         clothes_sprites = list(map(lambda x: x.sprite_list, self.cloth_layers.values()))
         value = Enumerable(clothes_sprites) \
@@ -50,7 +60,6 @@ class Jagger:
         collision = arcade.check_for_collision(self.sprite, tile.sprite)
         if not collision:
             return
-        cloth_configuration: DressingConfiguration.ClothConfiguration = Enumerable(self.cloth_configuration) \
-            .first_or_default(lambda x: x.name == tile.name)
+        cloth_configuration = self.get_cloth_configuration(tile.name)
         category_name = cloth_configuration.category
         self.set_cloth(tile.original_image, category_name)

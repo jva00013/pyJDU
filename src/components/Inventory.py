@@ -57,9 +57,9 @@ class Inventory:
         self.tiles = tiles
         self.page_selector = PageSelector(ui_sprites, self.dressing_view)
 
-    def check_clicked(self, position: tuple[float, float]) -> None | Tile:
+    def check_clicked(self, position: tuple[float, float], button: int) -> None | Tile:
         self.page_selector.check_clicked(position)
-        clicked_tile = Enumerable(self.tiles).first_or_default(lambda x: x.check_clicked(position))
+        clicked_tile = Enumerable(self.tiles).first_or_default(lambda x: x.check_clicked(position, button))
         if clicked_tile is None:
             return None
         return clicked_tile
