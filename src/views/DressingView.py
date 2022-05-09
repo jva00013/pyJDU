@@ -7,7 +7,7 @@ from src.components.EggCounter import EggCounter
 from src.components.Inventory import Inventory
 from src.components.Jagger import Jagger
 from src.components.Toolbar import Toolbar
-from src.utils.scaling import Scaling
+from utils import Utils
 from src.components.Tile import Tile
 
 
@@ -36,7 +36,7 @@ class DressingView(arcade.View):
         self.egg_counter.check_easters()
 
     def setup(self):
-        scale = Scaling.get_scale(self.window.width, self.window.height)
+        scale = Utils.get_scale(self.window.width, self.window.height)
         map_path = pathlib.Path("maps/DressingView.json")
         self.tile_map = arcade.load_tilemap(map_path, scaling=scale, hit_box_algorithm="None")
         self.scene = arcade.Scene.from_tilemap(self.tile_map)

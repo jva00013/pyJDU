@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="8">
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="8">
  <tileset firstgid="1" source="../tilesets/DoneImages.tsx"/>
  <tileset firstgid="8" source="../tilesets/DressingImages.tsx"/>
  <objectgroup id="4" name="ui_bg">
@@ -8,7 +8,9 @@
  </objectgroup>
  <objectgroup id="2" name="ui">
   <object id="2" gid="6" x="0" y="1088" width="1920" height="256"/>
-  <object id="4" name="base" gid="27" x="704" y="1056" width="628.686" height="1088"/>
   <object id="6" name="restart" gid="5" x="1472" y="160" width="375.728" height="114"/>
+ </objectgroup>
+ <objectgroup id="5" name="jagger">
+  <object id="4" name="base" gid="27" x="704" y="1056" width="628.686" height="1088"/>
  </objectgroup>
 </map>

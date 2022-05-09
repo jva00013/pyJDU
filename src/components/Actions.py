@@ -30,8 +30,8 @@ class Actions:
 
             case "done":
                 done_view = DoneView()
+                done_view.setup(self.dressing_view.jagger, self.dressing_view.inventory.config.categories)
                 self.dressing_view.window.show_view(done_view)
-                done_view.setup(self.dressing_view.jagger)
 
             case "random":
                 # Amount of categories to select

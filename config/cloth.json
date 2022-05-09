@@ -11,12 +11,14 @@
     "Mouth",
     "Necklace",
     "Beard",
+    "Cover",
     "Shirt",
     "Wraist",
     "Pants",
     "Shoes",
-    "Face",
     "Hair",
+    "EyeLash",
+    "Face",
     "Eyes",
     "Sockets"
   ],
@@ -29,6 +31,26 @@
     "EasterEgg"
   ],
   "images": [
+    {
+      "name": "finzo.png",
+      "category": "Pants",
+      "type": "Pantalones"
+    },
+    {
+      "name": "chaqueta.png",
+      "category": "Cover",
+      "type": "Torso"
+    },
+    {
+      "name": "bufandita.png",
+      "category": "Necklace",
+      "type": "Accesorios"
+    },
+    {
+      "name": "cardigan.png",
+      "category": "Cover",
+      "type": "Torso"
+    },
     {
       "name": "afeitao.png",
       "category": "Beard",
@@ -391,7 +413,7 @@
     },
     {
       "name": "chaleco.png",
-      "category": "Shirt",
+      "category": "Cover",
       "type": "Torso"
     },
     {
@@ -416,7 +438,7 @@
     },
     {
       "name": "esland.png",
-      "category": "Shirt",
+      "category": "Cover",
       "type": "Torso"
     },
     {
@@ -456,17 +478,17 @@
     },
     {
       "name": "musculosa-b.png",
-      "category": "Shirt",
+      "category": "Cover",
       "type": "Torso"
     },
     {
       "name": "musculosa-n(2).png",
-      "category": "Shirt",
+      "category": "Cover",
       "type": "Torso"
     },
     {
       "name": "musculosa-n.png",
-      "category": "Shirt",
+      "category": "Cover",
       "type": "Torso"
     },
     {
@@ -741,17 +763,17 @@
     },
     {
       "name": "cejas3.png",
-      "category": "Face",
+      "category": "EyeLash",
       "type": "Cabeza"
     },
     {
       "name": "cejas1.png",
-      "category": "Face",
+      "category": "EyeLash",
       "type": "Cabeza"
     },
     {
       "name": "cejas2.png",
-      "category": "Face",
+      "category": "EyeLash",
       "type": "Cabeza"
     },
     {

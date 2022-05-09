@@ -15,7 +15,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":628.241469816273,
+                 "width":628.241,
                  "x":704,
                  "y":1024
                 }, 
@@ -55,6 +55,29 @@
                  "y":1088
                 }, 
                 {
+                 "gid":5,
+                 "height":114,
+                 "id":6,
+                 "name":"restart",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":375.728,
+                 "x":1472,
+                 "y":160
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":5,
+         "name":"jagger",
+         "objects":[
+                {
                  "gid":27,
                  "height":1088,
                  "id":4,
@@ -65,18 +88,6 @@
                  "width":628.686,
                  "x":704,
                  "y":1056
-                }, 
-                {
-                 "gid":5,
-                 "height":114,
-                 "id":6,
-                 "name":"restart",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":375.727810650888,
-                 "x":1472,
-                 "y":160
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -84,7 +95,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":5,
+ "nextlayerid":6,
  "nextobjectid":8,
  "orientation":"orthogonal",
  "renderorder":"right-down",

@@ -1,3 +1,5 @@
+import os.path
+
 import arcade
 from PIL import Image
 from py_linq import Enumerable
@@ -24,6 +26,15 @@ class Jagger:
             .sprite_list[0]
         for category in self.cloth_layers:
             self.cloth_layers[category] = scene.get_sprite_list(category)
+
+    def load_sprites(self, scene: arcade.Scene):
+        base_sprite = scene.get_sprite_list("jagger")[0]
+        x, y = base_sprite.position
+        for sprite_list_name in self.cloth_layers:
+            scene_sprite_list = scene.get_sprite_list(sprite_list_name)
+            scene_sprite_list.extend(self.cloth_layers[sprite_list_name])
+            for sprite in scene_sprite_list.sprite_list:
+                sprite.set_position(x, y)
 
     def clear(self):
         for sprite_list in self.cloth_layers.values():

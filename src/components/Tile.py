@@ -9,6 +9,7 @@ from src.views import DressingView
 
 class Tile:
     sprite: arcade.Sprite
+    sprite_list: arcade.SpriteList
     original_size: tuple[float, float]
     original_aspect_ratio: float
     original_position: tuple[float, float]
@@ -24,6 +25,8 @@ class Tile:
         self.original_aspect_ratio = sprite.width / sprite.height
         self.original_position = (sprite.center_x, sprite.center_y)
         self.original_hit_box = sprite.get_hit_box()
+        self.sprite_list = arcade.SpriteList()
+        self.sprite_list.append(self.sprite)
 
     def set_image(self, image: Image):
         self.original_image = image
@@ -42,9 +45,7 @@ class Tile:
         self.sprite.set_hit_box(self.original_hit_box)
 
     def check_clicked(self, position: tuple[float, float], button: int) -> bool:
-        sprite_list = arcade.SpriteList()
-        sprite_list.append(self.sprite)
-        clicked_tile = arcade.get_sprites_at_point(position, sprite_list)
+        clicked_tile = arcade.get_sprites_at_point(position, self.sprite_list)
         if len(clicked_tile) <= 0:
             return False
         if button == arcade.MOUSE_BUTTON_LEFT:

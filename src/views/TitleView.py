@@ -1,7 +1,7 @@
 import arcade.gui
 import arcade
 import pathlib
-from src.utils.scaling import Scaling
+from utils import Utils
 from src.views.DressingView import DressingView
 
 
@@ -16,7 +16,7 @@ class TitleView(arcade.View):
 
     def setup(self):
         map_path = pathlib.Path("maps/TitleView.json")
-        scale = Scaling.get_scale(self.window.width, self.window.height)
+        scale = Utils.get_scale(self.window.width, self.window.height)
         self.tile_map = arcade.load_tilemap(map_path, scale)
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
         self.start_button = self.scene["ButtonBg"]

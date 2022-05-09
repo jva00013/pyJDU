@@ -7,6 +7,7 @@ import arcade
 from PIL import Image
 from py_linq import Enumerable
 
+from utils import Utils
 from src.views import DressingView
 from src.components.PageSelector import PageSelector
 from src.components.Tile import Tile
@@ -99,12 +100,7 @@ class Inventory:
             data = json.load(file)
             self.config = DressingConfiguration(data)
 
-        for index, layout_name in enumerate(self.config.categories):
-            if index == 0:
-                scene.add_sprite_list_after(layout_name, "jagger")
-                continue
-            prev_layout_name = self.config.categories[index - 1]
-            scene.add_sprite_list_before(layout_name, prev_layout_name)
+        Utils.load_layers(scene, self.config.categories)
 
     def setup(self, scene: arcade.Scene):
         self.load_config(scene)
