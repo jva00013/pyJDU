@@ -3,6 +3,9 @@ from py_linq import Enumerable
 import arcade
 import random
 
+from src.views.DoneView import DoneView
+
+
 class Actions:
     buttons_sprites = arcade.SpriteList
     dressing_view = DressingView
@@ -26,7 +29,9 @@ class Actions:
                 self.dressing_view.jagger.clear()
 
             case "done":
-                pass
+                done_view = DoneView()
+                self.dressing_view.window.show_view(done_view)
+                done_view.setup(self.dressing_view.jagger)
 
             case "random":
                 # Amount of categories to select
@@ -45,6 +50,3 @@ class Actions:
 
                     image = Enumerable(self.dressing_view.inventory.images).first(lambda x: image_name in x.filename)
                     self.dressing_view.jagger.set_cloth(image, category_name)
-
-            case "list":
-                pass
