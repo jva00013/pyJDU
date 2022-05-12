@@ -1,3 +1,5 @@
+import pathlib
+
 from src.views import DressingView
 from py_linq import Enumerable
 import arcade
@@ -18,6 +20,8 @@ class Actions:
             .to_list()
         for sprite in sprites:
             self.buttons_sprites.append(sprite)
+        self.reset_sound = arcade.load_sound(pathlib.Path("resources/sound/reset.wav"))
+        self.done_sound = arcade.load_sound(pathlib.Path("resources/sound/done.wav"))
 
     def check_clicked(self, position: tuple[float, float]):
         sprites = arcade.get_sprites_at_point(position, self.buttons_sprites)
@@ -27,14 +31,20 @@ class Actions:
         match sprite_selected.properties["name"]:
             case "reset":
                 self.dressing_view.jagger.clear()
+                self.reset_sound.play()
 
             case "done":
                 done_view = DoneView()
-                done_view.setup(self.dressing_view.jagger, self.dressing_view.inventory.config.categories)
+
+                done_view.setup(self.dressing_view.jagger,
+                                self.dressing_view.inventory.config.categories,
+                                self.dressing_view.egg_counter.easter_eggs)
+                self.done_sound.play()
                 self.dressing_view.window.show_view(done_view)
 
             case "random":
                 # Amount of categories to select
+                self.dressing_view.click_sound.play()
                 len_categories = len(self.dressing_view.inventory.config.categories) - 1
                 categories_count = random.randint(0, len_categories)
                 for _ in range(categories_count):

@@ -69,7 +69,7 @@ class Jagger:
 
     def check_collision(self, tile: Tile):
         collision = arcade.check_for_collision(self.sprite, tile.sprite)
-        if not collision:
+        if not collision or "frame" in tile.name:
             return
         cloth_configuration = self.get_cloth_configuration(tile.name)
         category_name = cloth_configuration.category

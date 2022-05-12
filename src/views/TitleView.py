@@ -1,7 +1,7 @@
 import arcade.gui
 import arcade
 import pathlib
-from utils import Utils
+from src.utils import Utils
 from src.views.DressingView import DressingView
 
 

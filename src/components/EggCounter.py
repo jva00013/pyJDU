@@ -1,3 +1,5 @@
+import pathlib
+
 import arcade
 import arcade.gui
 from py_linq import Enumerable
@@ -11,8 +13,8 @@ class EggCounter:
     dressing_view: DressingView
     easter_eggs: set[str]
 
-    def __init__(self, ui_sprites: arcade.SpriteList, dressing_view: DressingView):
-        self.easter_eggs = set()
+    def __init__(self, ui_sprites: arcade.SpriteList, egg_counter: set[str], dressing_view: DressingView):
+        self.easter_eggs = egg_counter
         self.dressing_view = dressing_view
         self.egg_sprite = Enumerable(ui_sprites) \
             .first_or_default(lambda x: "name" in x.properties and x.properties["name"] == "egg")
@@ -29,11 +31,17 @@ class EggCounter:
                         {"name": "Jagger profesor", "field": "profesor"},
                         {"name": "Jagger boxeador", "field": "boxeador"},
                         {"name": "Macho alfa total", "field": "macho_alfa"}]
+        self.list_sound = arcade.load_sound(pathlib.Path("resources/sound/lista.wav"))
+
+    def is_completed(self):
+        return len(self.easters) == len(self.easter_eggs)
 
     def add(self, name: str):
         if name not in self.easter_eggs:
             self.dressing_view.alert_manager.toggle_easteregg_tops()
         self.easter_eggs.add(name)
+        if self.is_completed():
+            self.dressing_view.alert_manager.show_done_eggs()
 
     def contains_all_cloth(self, *args):
         return Enumerable(args) \
@@ -49,6 +57,7 @@ class EggCounter:
         clicked_sprites = arcade.get_sprites_at_point(position, sprite_list)
         if len(clicked_sprites) <= 0:
             return
+        self.list_sound.play()
         self.dressing_view.alert_manager.toggle_list()
 
     def check_easters(self):
@@ -75,6 +84,7 @@ class EggCounter:
             self.add("esland")
         elif self.contains_all_cloth("glasses", "camisa-w", "jeans-b", "1-black"):
             self.add("profesor")
+
 
     def draw(self):
         x, y = self.egg_sprite.position

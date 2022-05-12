@@ -8,7 +8,7 @@ from src.components.EggCounter import EggCounter
 from src.components.Inventory import Inventory
 from src.components.Jagger import Jagger
 from src.components.Toolbar import Toolbar
-from utils import Utils
+from src.utils import Utils
 from src.components.Tile import Tile
 
 
@@ -27,6 +27,7 @@ class DressingView(arcade.View):
         self.jagger: Jagger | None = None
         self.tile_dragged: Tile | None = None
         self.alert_manager: Alert | None = None
+        self.click_sound: arcade.Sound = None
 
     def on_draw(self):
         self.clear()
@@ -37,7 +38,9 @@ class DressingView(arcade.View):
     def on_update(self, delta_time: float):
         self.egg_counter.check_easters()
 
-    def setup(self):
+    def setup(self, egg_counter=None):
+        if egg_counter is None:
+            egg_counter = set()
         scale = Utils.get_scale(self.window.width, self.window.height)
         map_path = pathlib.Path("maps/DressingView.json")
         self.tile_map = arcade.load_tilemap(map_path, scaling=scale, hit_box_algorithm="None")
@@ -61,8 +64,10 @@ class DressingView(arcade.View):
         self.manager = arcade.gui.UIManager()
         self.manager.enable()
 
+        self.click_sound = arcade.load_sound(pathlib.Path("resources/sound/click.wav"))
+
         arcade.load_font(pathlib.Path("resources/fonts/Liminality-Regular.ttf"))
-        self.egg_counter = EggCounter(ui_sprites, self)
+        self.egg_counter = EggCounter(ui_sprites, egg_counter, self)
 
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
         position = (x, y)
@@ -86,3 +91,4 @@ class DressingView(arcade.View):
         self.jagger.check_collision(self.tile_dragged)
         self.tile_dragged.restart_position()
         self.tile_dragged = None
+

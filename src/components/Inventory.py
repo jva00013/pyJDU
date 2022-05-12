@@ -1,13 +1,13 @@
 import json
+import math
 import os
 import pathlib
-from itertools import islice
 
 import arcade
 from PIL import Image
 from py_linq import Enumerable
 
-from utils import Utils
+from src.utils import Utils
 from src.views import DressingView
 from src.components.PageSelector import PageSelector
 from src.components.Tile import Tile
@@ -58,12 +58,14 @@ class Inventory:
         self.tiles = tiles
         self.page_selector = PageSelector(ui_sprites, self.dressing_view)
         self.dummy_image = Image.open(pathlib.Path("resources/interface/dressing/frame.png"))
+        self.drag_sound = arcade.load_sound(pathlib.Path("resources/sound/grab.wav"))
 
     def check_clicked(self, position: tuple[float, float], button: int) -> None | Tile:
         self.page_selector.check_clicked(position)
         clicked_tile = Enumerable(self.tiles).first_or_default(lambda x: x.check_clicked(position, button))
         if clicked_tile is None:
             return None
+        self.drag_sound.play()
         return clicked_tile
 
     def change_page(self, page_number: int):
@@ -74,10 +76,8 @@ class Inventory:
         images_to_show = self.actual_images[start_index:end_index]
         for index, image in enumerate(images_to_show):
             self.tiles[index].set_image(image)
-        finally_index = tiles_count - len(list(images_to_show))
-        # dummy_tiles = islice(self.tiles, finally_index, end_index)
-        # for tile in dummy_tiles:
-        #     tile.set_image(self.dummy_image)
+        for tile in self.tiles[len(images_to_show):tiles_count]:
+            tile.set_image(self.dummy_image)
 
     def change_cloth_type(self, cloth_type: str):
         self.actual_page = 0
@@ -90,7 +90,7 @@ class Inventory:
             .where(lambda x: os.path.basename(x.filename) in images_name) \
             .to_list()
 
-        self.total_pages = int(len(self.actual_images) / len(self.tiles))
+        self.total_pages = math.ceil(len(self.actual_images) / len(self.tiles))
         self.change_page(1)
 
     def load_images(self):

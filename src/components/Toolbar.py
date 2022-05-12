@@ -20,6 +20,7 @@ class Toolbar:
         clicked_sprites = arcade.get_sprites_at_point(position, self.sprite_list)
         if len(clicked_sprites) <= 0:
             return
+        self.dressing_view.click_sound.play()
         clicked_sprite = clicked_sprites[0]
         property_name = clicked_sprite.properties["name"]
         self.dressing_view.inventory.change_cloth_type(property_name.capitalize())

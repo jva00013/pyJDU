@@ -21,17 +21,17 @@ class PageSelector:
         sprites_clicked = arcade.get_sprites_at_point(position, self.inventory_sprites)
         if len(sprites_clicked) <= 0:
             return
-
+        self.dressing_view.click_sound.play()
         total_pages = self.dressing_view.inventory.total_pages
         actual_page = self.dressing_view.inventory.actual_page
         match sprites_clicked[0].properties["name"]:
             case "previous_page":
                 actual_page -= 1
-                if actual_page < 0:
+                if actual_page < 1:
                     actual_page = total_pages
                 self.dressing_view.inventory.change_page(actual_page)
             case "next_page":
                 actual_page += 1
                 if actual_page > total_pages:
-                    actual_page = 0
+                    actual_page = 1
                 self.dressing_view.inventory.change_page(actual_page)
