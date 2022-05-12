@@ -19,26 +19,28 @@ class EggCounter:
         self.list_sprite = Enumerable(ui_sprites) \
             .first_or_default(lambda x: "name" in x.properties and x.properties["name"] == "list")
         self.easters = [{"name": "Gertrudis", "field": "gertrudis"},
-                   {"name": "Andiamo", "field": "andiamo"},
-                   {"name": "Funzo", "field": "funzo"},
-                   {"name": "Madre nuclear", "field": "madre_nuclear"},
-                   {"name": "Doraemon", "field": "doraemon"},
-                   {"name": "Finzo", "field": "finzo"},
-                   {"name": "Britney Spears", "field": "britney"},
-                   {"name": "Jagger Esland", "field": "esland"},
-                   {"name": "Jagger profesor", "field": "profesor"},
-                   {"name": "Jagger boxeador", "field": "boxeador"},
-                   {"name": "Macho alfa total", "field": "macho_alfa"}]
+                        {"name": "Andiamo", "field": "andiamo"},
+                        {"name": "Funzo", "field": "funzo"},
+                        {"name": "Madre nuclear", "field": "madre_nuclear"},
+                        {"name": "Doraemon", "field": "doraemon"},
+                        {"name": "Finzo", "field": "finzo"},
+                        {"name": "Britney Spears", "field": "britney"},
+                        {"name": "Jagger Esland", "field": "esland"},
+                        {"name": "Jagger profesor", "field": "profesor"},
+                        {"name": "Jagger boxeador", "field": "boxeador"},
+                        {"name": "Macho alfa total", "field": "macho_alfa"}]
 
     def add(self, name: str):
+        if name not in self.easter_eggs:
+            self.dressing_view.alert_manager.toggle_easteregg_tops()
         self.easter_eggs.add(name)
 
     def contains_all_cloth(self, *args):
-        return Enumerable(args)\
+        return Enumerable(args) \
             .all(lambda name: self.dressing_view.jagger.check_if_cloth_present(name))
 
     def contains_any_cloth(self, *args):
-        return Enumerable(args)\
+        return Enumerable(args) \
             .any(lambda name: self.dressing_view.jagger.check_if_cloth_present(name))
 
     def check_clicked(self, position: tuple[float, float]):
@@ -47,22 +49,7 @@ class EggCounter:
         clicked_sprites = arcade.get_sprites_at_point(position, sprite_list)
         if len(clicked_sprites) <= 0:
             return
-        self.show_list()
-
-    def show_list(self):
-        selection = Enumerable(self.easters)\
-            .select(lambda x: f"[✓] {x['name']}" if x["field"] in self.easter_eggs else f"[ ] {x['name']}")\
-            .to_list()
-        selection.insert(0, "Outfits para hacer:")
-        message_box = arcade.gui.UIMessageBox(
-            width=300,
-            height=300,
-            message_text=(
-                "\n".join(selection)
-            ),
-            buttons=["Listo"]
-        )
-        self.dressing_view.manager.add(message_box)
+        self.dressing_view.alert_manager.toggle_list()
 
     def check_easters(self):
         if self.contains_all_cloth("neon", "cono", "andi") and self.contains_any_cloth("zig-zag", "galaxy"):
@@ -78,7 +65,7 @@ class EggCounter:
             self.add("macho_alfa")
         elif self.contains_all_cloth("rulos", "musculosa-n", "skirt-2", "guantes", "bebe-nuclear"):
             self.add("madre_nuclear")
-        elif self.contains_all_cloth("doraemon"," doraemon2", "short-s", "pantuflas"):
+        elif self.contains_all_cloth("doraemon", " doraemon2", "short-s", "pantuflas"):
             self.add("doraemon")
         elif self.contains_all_cloth("perilla", "musculosa-n", "corto", "finzo"):
             self.add("finzo")
@@ -98,3 +85,19 @@ class EggCounter:
                          width=85,
                          font_size=16,
                          font_name="Liminality")
+
+        if self.dressing_view.alert_manager.list.visible:
+            selection = Enumerable(self.easters) \
+                .select(lambda x: f"[OK] {x['name']}" if x["field"] in self.easter_eggs else f"[  ] {x['name']}") \
+                .to_list()
+            list_sprite = self.dressing_view.alert_manager.list
+            x, y = list_sprite.position
+            selection.insert(0, "Outfits para hacer:")
+            arcade.draw_text("\n".join(selection),
+                             width=int(list_sprite.width),
+                             multiline=True,
+                             start_x=30 + x - (list_sprite.width / 2),
+                             start_y=y + (list_sprite.height / 2) - 30,
+                             font_size=17,
+                             color=(0, 0, 0),
+                             font_name="Liminality")

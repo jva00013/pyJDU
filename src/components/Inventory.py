@@ -57,6 +57,7 @@ class Inventory:
         self.dressing_view = dressing_view
         self.tiles = tiles
         self.page_selector = PageSelector(ui_sprites, self.dressing_view)
+        self.dummy_image = Image.open(pathlib.Path("resources/interface/dressing/frame.png"))
 
     def check_clicked(self, position: tuple[float, float], button: int) -> None | Tile:
         self.page_selector.check_clicked(position)
@@ -68,11 +69,15 @@ class Inventory:
     def change_page(self, page_number: int):
         self.actual_page = page_number
         tiles_count = len(self.tiles)
-        start_index = page_number * tiles_count
+        start_index = (page_number-1) * tiles_count
         end_index = start_index + tiles_count
-        images_to_show = islice(self.actual_images, start_index, end_index)
+        images_to_show = self.actual_images[start_index:end_index]
         for index, image in enumerate(images_to_show):
             self.tiles[index].set_image(image)
+        finally_index = tiles_count - len(list(images_to_show))
+        # dummy_tiles = islice(self.tiles, finally_index, end_index)
+        # for tile in dummy_tiles:
+        #     tile.set_image(self.dummy_image)
 
     def change_cloth_type(self, cloth_type: str):
         self.actual_page = 0

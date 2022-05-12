@@ -408,9 +408,56 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":28,
+         "name":"alerts",
+         "objects":[
+                {
+                 "gid":24,
+                 "height":555,
+                 "id":53,
+                 "name":"tops",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":750.353,
+                 "x":512,
+                 "y":777
+                }, 
+                {
+                 "gid":25,
+                 "height":555,
+                 "id":54,
+                 "name":"accesorios",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":750.353,
+                 "x":512,
+                 "y":777
+                }, 
+                {
+                 "gid":18,
+                 "height":563.752,
+                 "id":55,
+                 "name":"lista",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":512,
+                 "x":64,
+                 "y":851
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":28,
- "nextobjectid":53,
+ "nextlayerid":29,
+ "nextobjectid":57,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.4",
