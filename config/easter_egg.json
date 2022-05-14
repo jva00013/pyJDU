@@ -112,8 +112,7 @@
       "all": [
         "glasses",
         "camisa-w",
-        "jeans-b",
-        "1-black"
+        "jeans-b"
       ]
     }
   },
@@ -138,7 +137,8 @@
         "chaleco",
         "suelto",
         "cadenita",
-        "botitas"
+        "botitas",
+        "jeans-b"
       ]
     }
   }

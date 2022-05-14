@@ -40,13 +40,15 @@ class EggCounter:
         return len(self.all_easters) == len(self.easter_eggs)
 
     def add(self, name: str):
-        if name not in self.easter_eggs:
-            self.dressing_view.alert_manager.toggle_easter_egg_unlocked()
         if name in self.easter_eggs:
             return
         self.easter_eggs.add(name)
         if self.is_completed():
+            self.dressing_view.sound_button.bg_music.pause()
             self.dressing_view.alert_manager.show_done_eggs()
+            return
+        else:
+            self.dressing_view.alert_manager.toggle_easter_egg_unlocked()
 
     def contains_all_cloth(self, *args):
         return Enumerable(args) \

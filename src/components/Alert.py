@@ -28,3 +28,4 @@ class Alert:
     def show_done_eggs(self):
         self.done_eggs.visible = True
         self.applause_sound.play()
+

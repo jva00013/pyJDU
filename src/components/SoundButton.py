@@ -22,6 +22,7 @@ class SoundButton(arcade.Sprite):
         self.set_position(self.width, window.height - 30)
 
     def check_clicked(self, position: tuple[float, float]):
+        self.bg_music.play()
         if not self.collides_with_point(position):
             return
         if self.playing:
