@@ -79,6 +79,7 @@ class DressingView(arcade.View):
         self.alert_manager.toggle_easteregg_tops(False)
         self.alert_manager.applause_sound.pause()
         self.alert_manager.done_eggs.visible = False
+        self.alert_manager.confetti.visible = False
 
     def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
         if not self.tile_dragged:

@@ -87,9 +87,9 @@
             }
         }
     },
-    "last.exportedFilePath": "F:/TestingSoftware/Games/pyJDU/maps",
+    "last.exportedFilePath": "E:/Repositorios/pyJDU/maps",
     "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
-    "last.imagePath": "F:/TestingSoftware/Games/pyJDU/resources/interface/done_eggs",
+    "last.imagePath": "E:/Repositorios/pyJDU/resources/interface/done_eggs",
     "map.fixedSize": true,
     "map.height": 34,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
