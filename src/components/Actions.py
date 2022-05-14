@@ -38,7 +38,8 @@ class Actions:
 
                 done_view.setup(self.dressing_view.jagger,
                                 self.dressing_view.inventory.config.categories,
-                                self.dressing_view.egg_counter.easter_eggs)
+                                self.dressing_view.egg_counter.easter_eggs,
+                                self.dressing_view.sound_button)
                 self.done_sound.play()
                 self.dressing_view.window.show_view(done_view)
 

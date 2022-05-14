@@ -10,7 +10,7 @@ class Game:
 
     def run(self):
         arcade.set_background_color((255, 181, 253))
-        title_view = DressingView()
+        title_view = TitleView()
         self.game_window.show_view(title_view)
         title_view.setup()
         self.game_window.run()
