@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Gertrudis",
+    "field": "gertrudis",
+    "clothes": [
+      [
+        "rubia",
+        "guantes-2",
+        "gertrudis",
+        "bufandita",
+        "cardigan",
+        "makeup"
+      ]
+    ]
+  },
+  {
+    "name": "Andiamo",
+    "field": "andiamo",
+    "clothes": [
+      [
+        "neon",
+        "cono",
+        "andi"
+      ],
+      [
+        "zig-zag",
+        "galaxy"
+      ]
+    ]
+  },
+  {
+    "name": "Funzo",
+    "field": "funzo",
+    "clothes": [
+      [
+        "gorrita",
+        "funzo",
+        "finzo-0",
+        "rapado",
+        "finzo-2"
+      ]
+    ]
+  },
+  {
+    "name": "Madre nuclear",
+    "field": "madre_nuclear",
+    "clothes": [
+      [
+        "rulos",
+        "musculosa-n",
+        "skirt-2",
+        "guantes",
+        "bebe-nuclear"
+      ]
+    ]
+  },
+  {
+    "name": "Doraemon",
+    "field": "doraemon",
+    "clothes": [
+      [
+        "doraemon",
+        " doraemon2",
+        "short-s",
+        "pantuflas"
+      ]
+    ]
+  },
+  {
+    "name": "Finzo",
+    "field": "finzo",
+    "clothes": [
+      [
+        "perilla",
+        "musculosa-n",
+        "corto",
+        "finzo"
+      ]
+    ]
+  },
+  {
+    "name": "Britney Spears",
+    "field": "britney",
+    "clothes": [
+      [
+        "britney-1",
+        "britney-1",
+        "skirt-2",
+        "3-black",
+        "mocasines"
+      ]
+    ]
+  },
+  {
+    "name": "Jagger Esland",
+    "field": "esland",
+    "clothes": [
+      [
+        "gag",
+        "esland",
+        "turtle-b",
+        "jeans-b",
+        "mocasines",
+        "manbun"
+      ]
+    ]
+  },
+  {
+    "name": "Jagger profesor",
+    "field": "profesor",
+    "clothes": [
+      [
+        "glasses",
+        "camisa-w",
+        "jeans-b",
+        "1-black"
+      ]
+    ]
+  },
+  {
+    "name": "Jagger boxeador",
+    "field": "boxeador",
+    "clothes": [
+      [
+        "broccli",
+        "vendas",
+        "cinto",
+        "boxeo-1",
+        "coletita"
+      ]
+    ]
+  },
+  {
+    "name": "Macho alfa total",
+    "field": "macho_alfa",
+    "clothes": [
+      "chaleco",
+      "suelto",
+      "cadenita",
+      "botitas"
+    ]
+  }
+]
