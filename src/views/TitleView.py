@@ -15,8 +15,8 @@ class TitleView(arcade.View):
 
     def __init__(self):
         super().__init__()
-        self.sound_sprite_list: arcade.SpriteList = None
-        self.sound_button: SoundButton = None
+        self.sound_sprite_list: arcade.SpriteList | None = None
+        self.sound_button: SoundButton | None = None
 
     def setup(self):
         map_path = pathlib.Path("maps/TitleView.json")

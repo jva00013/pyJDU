@@ -1,11 +1,9 @@
-import os.path
-
 import arcade
 from PIL import Image
 from py_linq import Enumerable
 
-from src.components.Tile import Tile
 from src.components.Inventory import DressingConfiguration
+from src.components.Tile import Tile
 
 
 class Jagger:

@@ -14,13 +14,13 @@ class DoneView(arcade.View):
     def __init__(self):
         super().__init__()
         self.easter_eggs = None
-        self.jagger: Jagger = None
-        self.tile_map: arcade.TileMap = None
-        self.scene: arcade.Scene = None
-        self.sprites: arcade.SpriteList = None
-        self.explosion: Explosion = None
-        self.explosion_list: arcade.SpriteList = None
-        self.sound_button: SoundButton = None
+        self.jagger: Jagger | None = None
+        self.tile_map: arcade.TileMap | None = None
+        self.scene: arcade.Scene | None = None
+        self.sprites: arcade.SpriteList | None = None
+        self.explosion: Explosion | None = None
+        self.explosion_list: arcade.SpriteList | None = None
+        self.sound_button: SoundButton | None = None
 
     def setup(self, jagger: Jagger, categories: list[str], easter_eggs: set[str], sound_button: SoundButton):
         self.sound_button = sound_button
@@ -55,7 +55,7 @@ class DoneView(arcade.View):
         self.explosion.update()
 
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
-        self.sound_button.check_clicked((x,y))
+        self.sound_button.check_clicked((x, y))
         sprites_clicked = arcade.get_sprites_at_point((x, y), self.sprites)
         if len(sprites_clicked) <= 0:
             return

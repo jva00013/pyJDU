@@ -28,9 +28,9 @@ class DressingView(arcade.View):
         self.jagger: Jagger | None = None
         self.tile_dragged: Tile | None = None
         self.alert_manager: Alert | None = None
-        self.click_sound: arcade.Sound = None
-        self.sound_list: arcade.SpriteList = None
-        self.sound_button: SoundButton = None
+        self.click_sound: arcade.Sound | None = None
+        self.sound_list: arcade.SpriteList | None = None
+        self.sound_button: SoundButton | None = None
 
     def on_draw(self):
         self.clear()
@@ -86,11 +86,9 @@ class DressingView(arcade.View):
         self.egg_counter.check_clicked(position)
         self.sound_button.check_clicked(position)
 
-        self.alert_manager.toggle_easteregg_accesories(False)
-        self.alert_manager.toggle_easteregg_tops(False)
+        self.alert_manager.toggle_easter_egg_unlocked(False)
         self.alert_manager.applause_sound.pause()
         self.alert_manager.done_eggs.visible = False
-        self.alert_manager.confetti.visible = False
 
     def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
         if not self.tile_dragged:

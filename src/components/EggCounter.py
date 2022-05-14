@@ -41,7 +41,7 @@ class EggCounter:
 
     def add(self, name: str):
         if name not in self.easter_eggs:
-            self.dressing_view.alert_manager.toggle_easteregg_tops()
+            self.dressing_view.alert_manager.toggle_easter_egg_unlocked()
         if name in self.easter_eggs:
             return
         self.easter_eggs.add(name)

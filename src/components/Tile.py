@@ -1,9 +1,6 @@
 import os
-import pathlib
-
 import arcade
 from PIL import Image
-
 from src.views import DressingView
 
 

@@ -1,5 +1,5 @@
 import arcade
-from src.views import TitleView, DressingView
+from src.views import TitleView
 
 
 class Game:
