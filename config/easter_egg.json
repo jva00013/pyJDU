@@ -2,8 +2,8 @@
   {
     "name": "Gertrudis",
     "field": "gertrudis",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "rubia",
         "guantes-2",
         "gertrudis",
@@ -11,91 +11,91 @@
         "cardigan",
         "makeup"
       ]
-    ]
+    }
   },
   {
     "name": "Andiamo",
     "field": "andiamo",
-    "clothes": [
-      [
-        "neon",
+    "clothes": {
+      "all": [
         "cono",
+        "neon",
         "andi"
       ],
-      [
+      "any": [
         "zig-zag",
         "galaxy"
       ]
-    ]
+    }
   },
   {
     "name": "Funzo",
     "field": "funzo",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "gorrita",
         "funzo",
         "finzo-0",
         "rapado",
         "finzo-2"
       ]
-    ]
+    }
   },
   {
     "name": "Madre nuclear",
     "field": "madre_nuclear",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "rulos",
         "musculosa-n",
         "skirt-2",
         "guantes",
         "bebe-nuclear"
       ]
-    ]
+    }
   },
   {
     "name": "Doraemon",
     "field": "doraemon",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "doraemon",
         " doraemon2",
         "short-s",
         "pantuflas"
       ]
-    ]
+    }
   },
   {
     "name": "Finzo",
     "field": "finzo",
-    "clothes": [
-      [
-        "perilla",
-        "musculosa-n",
-        "corto",
-        "finzo"
+    "clothes": {
+      "all": [
+          "perilla",
+          "musculosa-n",
+          "corto",
+          "finzo"
       ]
-    ]
+    }
   },
   {
     "name": "Britney Spears",
     "field": "britney",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "britney-1",
         "britney-1",
         "skirt-2",
         "3-black",
         "mocasines"
       ]
-    ]
+    }
   },
   {
     "name": "Jagger Esland",
     "field": "esland",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "gag",
         "esland",
         "turtle-b",
@@ -103,41 +103,43 @@
         "mocasines",
         "manbun"
       ]
-    ]
+    }
   },
   {
     "name": "Jagger profesor",
     "field": "profesor",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "glasses",
         "camisa-w",
         "jeans-b",
         "1-black"
       ]
-    ]
+    }
   },
   {
     "name": "Jagger boxeador",
     "field": "boxeador",
-    "clothes": [
-      [
+    "clothes": {
+      "all": [
         "broccli",
         "vendas",
         "cinto",
         "boxeo-1",
         "coletita"
       ]
-    ]
+    }
   },
   {
     "name": "Macho alfa total",
     "field": "macho_alfa",
-    "clothes": [
-      "chaleco",
-      "suelto",
-      "cadenita",
-      "botitas"
-    ]
+    "clothes": {
+      "all": [
+        "chaleco",
+        "suelto",
+        "cadenita",
+        "botitas"
+      ]
+    }
   }
 ]

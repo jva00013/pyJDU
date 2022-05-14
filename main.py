@@ -6,7 +6,7 @@ class Game:
     game_window: arcade.Window
 
     def setup(self):
-        self.game_window = arcade.Window(width=1366, height=768, center_window=True, title="Jagger Dress Up")
+        self.game_window = arcade.Window(width=1280, height=720, center_window=True, title="Jagger Dress Up")
 
     def run(self):
         arcade.set_background_color((255, 181, 253))

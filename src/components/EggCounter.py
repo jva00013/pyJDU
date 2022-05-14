@@ -17,7 +17,8 @@ class EggCounter:
     class EasterConfig:
         name: str
         field: str
-        clothes: list[str]
+        clothes: dict[str, list[str]]
+
         def __init__(self, data: dict):
             self.name = data["name"]
             self.field = data["field"]
@@ -64,9 +65,15 @@ class EggCounter:
 
     def check_easters(self):
         for easter_config in self.all_easters:
-            easter_config.clothes
-
-
+            all_clothes = easter_config.clothes["all"]
+            any_clothes = None
+            if "any" in easter_config.clothes:
+                any_clothes = easter_config.clothes["any"]
+            result = self.contains_all_cloth(*all_clothes)
+            if any_clothes is not None:
+                result = result and self.contains_any_cloth(*any_clothes)
+            if result:
+                self.add(easter_config.field)
 
     def draw(self):
         x, y = self.egg_sprite.position
@@ -80,7 +87,8 @@ class EggCounter:
 
         if self.dressing_view.alert_manager.list.visible:
             selection = Enumerable(self.all_easters) \
-                .select(lambda x: f"[OK] {x['name']}" if x["field"] in self.easter_eggs else f"[  ] {x['name']}") \
+                .select(
+                lambda config: f"[OK] {config.name}" if config.field in self.easter_eggs else f"[  ] {config.name}") \
                 .to_list()
             list_sprite = self.dressing_view.alert_manager.list
             x, y = list_sprite.position
