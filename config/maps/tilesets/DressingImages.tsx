@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.8" tiledversion="1.8.4" name="Dressing" tilewidth="3512" tileheight="1912" tilecount="21" columns="0">
+<tileset version="1.8" tiledversion="1.8.4" name="Dressing" tilewidth="3512" tileheight="1912" tilecount="23" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="139" height="86" source="../../../resources/interface/dressing/accesories.png"/>
@@ -61,7 +61,13 @@
  <tile id="25">
   <image width="2585" height="1912" source="../../../resources/interface/done_eggs/felicidades.png"/>
  </tile>
- <tile id="28">
-  <image width="2585" height="1912" source="../../../resources/interface/dressing/easter unlocked.png"/>
+ <tile id="31">
+  <image width="1683" height="1245" source="../../../resources/interface/dressing/easter accesorios.png"/>
+ </tile>
+ <tile id="32">
+  <image width="1683" height="1245" source="../../../resources/interface/dressing/easter tops.png"/>
+ </tile>
+ <tile id="33">
+  <image width="1683" height="1245" source="../../../resources/interface/dressing/easter unlocked.png"/>
  </tile>
 </tileset>

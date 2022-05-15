@@ -5,6 +5,7 @@ import arcade
 import arcade.gui
 from py_linq import Enumerable
 
+from src.components.Inventory import DressingConfiguration
 from src.views import DressingView
 
 
@@ -48,7 +49,19 @@ class EggCounter:
             self.dressing_view.alert_manager.show_done_eggs()
             return
         else:
-            self.dressing_view.alert_manager.toggle_easter_egg_unlocked()
+            unlocked_easter_eggs = len(self.easter_eggs)
+            if unlocked_easter_eggs > 4:
+                self.dressing_view.alert_manager.toggle_easter_normal()
+                return
+            image_configs = self.dressing_view.inventory.config.images
+            easter_egg_config: DressingConfiguration.ClothConfiguration = Enumerable(image_configs)\
+                .first_or_default(lambda x: x.type == "EasterEgg")
+            if easter_egg_config.name in ("karmaggan.png", "cocinero.png", "bolsa.png"):
+                self.dressing_view.alert_manager.toggle_easter_accessories()
+                easter_egg_config.type = "Accesorios"
+                return
+            self.dressing_view.alert_manager.toggle_easter_top()
+            easter_egg_config.type = "Torso"
 
     def contains_all_cloth(self, *args):
         return Enumerable(args) \

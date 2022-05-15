@@ -439,14 +439,38 @@
                  "y":999
                 }, 
                 {
-                 "gid":29,
-                 "height":777,
-                 "id":63,
-                 "name":"easter_unlocked",
+                 "gid":34,
+                 "height":814,
+                 "id":67,
+                 "name":"easter_normal",
                  "rotation":0,
                  "type":"",
                  "visible":false,
-                 "width":1050.49424686192,
+                 "width":1100.37108433735,
+                 "x":384,
+                 "y":925
+                }, 
+                {
+                 "gid":33,
+                 "height":801,
+                 "id":68,
+                 "name":"easter_top",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":1082.79759036145,
+                 "x":384,
+                 "y":925
+                }, 
+                {
+                 "gid":32,
+                 "height":801,
+                 "id":69,
+                 "name":"easter_accessories",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":1082.79759036145,
                  "x":384,
                  "y":925
                 }],
@@ -457,7 +481,7 @@
          "y":0
         }],
  "nextlayerid":29,
- "nextobjectid":64,
+ "nextobjectid":70,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.4",

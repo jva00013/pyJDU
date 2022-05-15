@@ -86,7 +86,10 @@ class DressingView(arcade.View):
         self.egg_counter.check_clicked(position)
         self.sound_button.check_clicked(position)
 
-        self.alert_manager.toggle_easter_egg_unlocked(False)
+        self.alert_manager.toggle_easter_accessories(False)
+        self.alert_manager.toggle_easter_top(False)
+        self.alert_manager.toggle_easter_normal(False)
+
         if self.sound_button.playing:
             self.sound_button.bg_music.play()
         self.alert_manager.applause_sound.pause()

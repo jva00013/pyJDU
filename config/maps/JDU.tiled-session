@@ -68,11 +68,11 @@
             }
         },
         "tmxmaps/DressingMap.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 5,
+            "scale": 1,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 1163.6363636363637,
-                "y": 448.4848484848484
+                "x": 764,
+                "y": 1313
             }
         },
         "tmxmaps/Images.tsx": {
@@ -101,9 +101,9 @@
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
-        "tmxmaps/DoneMap.tmx",
         "tilesets/DressingImages.tsx",
         "tmxmaps/DressingMap.tmx",
+        "tmxmaps/DoneMap.tmx",
         "tilesets/DoneImages.tsx",
         "tilesets/TitleImages.tsx",
         "tmxmaps/TitleMap.tmx",
