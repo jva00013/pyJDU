@@ -1,2 +1,5 @@
 arcade~=2.6.13
 Pillow~=9.0.1
+pyglet~=2.0a2
+future~=0.18.2
+screeninfo~=0.8
