@@ -1,0 +1,1 @@
+pyinstaller main.py --add-data "maps;maps" --add-data "resources;resources"

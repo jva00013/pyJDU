@@ -1,12 +1,19 @@
 import arcade
+
+from src.resolution_tk import Form
 from src.views import TitleView
 
 
 class Game:
     game_window: arcade.Window
 
-    def setup(self):
-        self.game_window = arcade.Window(width=1280, height=720, center_window=True, title="Jagger Dress Up")
+    def setup(self, width: int, height: int, fullscreen: bool):
+        print(width, height, fullscreen)
+        self.game_window = arcade.Window(width=width,
+                                         height=height,
+                                         center_window=True,
+                                         fullscreen=fullscreen,
+                                         title="Jagger Dress Up")
 
     def run(self):
         arcade.set_background_color((255, 181, 253))
@@ -17,6 +24,9 @@ class Game:
 
 
 if __name__ == "__main__":
+    form = Form()
+    form.mainloop()
+
     game = Game()
-    game.setup()
+    game.setup(**form.get_data())
     game.run()
