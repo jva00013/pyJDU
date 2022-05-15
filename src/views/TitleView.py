@@ -13,6 +13,10 @@ class TitleView(arcade.View):
     camera: arcade.Camera
     start_button: arcade.SpriteList
 
+    def on_key_press(self, symbol: int, modifiers: int):
+        if symbol == arcade.key.ESCAPE:
+            arcade.exit()
+
     def __init__(self):
         super().__init__()
         self.sound_sprite_list: arcade.SpriteList | None = None

@@ -103,5 +103,5 @@ class EggCounter:
                              start_x=30 + x - (list_sprite.width / 2),
                              start_y=y + (list_sprite.height / 2) - 30,
                              font_size=17,
-                             color=(0, 0, 0),
+                             color=(187, 125, 234),
                              font_name="Liminality")

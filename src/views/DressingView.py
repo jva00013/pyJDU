@@ -98,6 +98,10 @@ class DressingView(arcade.View):
         self.tile_dragged.sprite.center_x += dx
         self.tile_dragged.sprite.center_y += dy
 
+    def on_key_press(self, symbol: int, modifiers: int):
+        if symbol == arcade.key.ESCAPE:
+            arcade.exit()
+
     def on_mouse_release(self, x: float, y: float, button: int,
                          modifiers: int):
         if not self.tile_dragged:

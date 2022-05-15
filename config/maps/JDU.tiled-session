@@ -6,7 +6,7 @@
     "activeFile": "tmxmaps/DressingMap.tmx",
     "expandedProjectPaths": [
     ],
-    "file.lastUsedOpenFilter": "All Files (*)",
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
     "fileStates": {
         "": {
             "scaleInDock": 0.03125
@@ -61,9 +61,9 @@
         },
         "tmxmaps/DoneMap.tmx": {
             "scale": 0.33,
-            "selectedLayer": 2,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 1209.090909090909,
+                "x": 1209.0909090909092,
                 "y": 487.8787878787879
             }
         },
@@ -71,8 +71,8 @@
             "scale": 0.33,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 818.1818181818181,
-                "y": 278.78787878787875
+                "x": 1163.6363636363637,
+                "y": 448.4848484848484
             }
         },
         "tmxmaps/Images.tsx": {
@@ -101,9 +101,9 @@
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
+        "tmxmaps/DoneMap.tmx",
         "tilesets/DressingImages.tsx",
         "tmxmaps/DressingMap.tmx",
-        "tmxmaps/DoneMap.tmx",
         "tilesets/DoneImages.tsx",
         "tilesets/TitleImages.tsx",
         "tmxmaps/TitleMap.tmx",

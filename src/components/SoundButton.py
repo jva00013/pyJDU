@@ -13,7 +13,7 @@ class SoundButton(arcade.Sprite):
         self.on_texture = arcade.Texture("on_texture", Image.open(pathlib.Path("resources/interface/common/on.png")))
         self.off_texture = arcade.Texture("off_texture", Image.open(pathlib.Path("resources/interface/common/off.png")))
         self.actual_view = None
-        self.bg_music = arcade.load_sound(pathlib.Path("resources/sound/bg_music.wav")).play()
+        self.bg_music = arcade.load_sound(pathlib.Path("resources/sound/bg_music.wav")).play(loop=True)
         self.playing = True
         self.texture = self.on_texture
         self.scale = 0.25

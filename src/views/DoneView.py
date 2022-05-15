@@ -19,7 +19,6 @@ class DoneView(arcade.View):
         self.scene: arcade.Scene | None = None
         self.sprites: arcade.SpriteList | None = None
         self.explosion: Explosion | None = None
-        self.explosion_list: arcade.SpriteList | None = None
         self.sound_button: SoundButton | None = None
 
     def setup(self, jagger: Jagger, categories: list[str], easter_eggs: set[str], sound_button: SoundButton):
@@ -35,19 +34,23 @@ class DoneView(arcade.View):
 
         self.sprites = self.scene.get_sprite_list("ui")
 
-        self.explosion_list = arcade.SpriteList()
+        explosion_list = arcade.SpriteList()
         self.explosion = Explosion(
             arcade.load_spritesheet(file_name=pathlib.Path("resources/interface/done/explosion.png"),
                                     sprite_width=100, sprite_height=100,
                                     columns=7, count=1000))
-        self.explosion.center_x = self.jagger.sprite.center_x + 160
+        self.explosion.center_x = self.jagger.sprite.center_x + 200
         self.explosion.center_y = self.jagger.sprite.center_y
-        self.explosion.scale = 10
-        self.explosion_list.append(self.explosion)
+        self.explosion.scale = 20
+        explosion_list.append(self.explosion)
+        self.scene.add_sprite_list("explosives", sprite_list=explosion_list)
+
+    def on_key_press(self, symbol: int, modifiers: int):
+        if symbol == arcade.key.ESCAPE:
+            arcade.exit()
 
     def on_draw(self):
         self.clear()
-        self.explosion_list.draw()
         self.scene.draw()
         self.sound_button.draw()
 
