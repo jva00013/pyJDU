@@ -8,7 +8,6 @@ class Game:
     game_window: arcade.Window
 
     def setup(self, width: int, height: int, fullscreen: bool):
-        print(width, height, fullscreen)
         self.game_window = arcade.Window(width=width,
                                          height=height,
                                          center_window=True,
@@ -26,7 +25,8 @@ class Game:
 if __name__ == "__main__":
     form = Form()
     form.mainloop()
-
+    if not form.good_close:
+        exit()
     game = Game()
     game.setup(**form.get_data())
     game.run()

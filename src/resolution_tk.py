@@ -12,7 +12,10 @@ class Form(tk.Tk):
         primary_monitor = next(x for x in get_monitors() if x.is_primary)
 
         self.fullscreen = tk.StringVar(self)
-        self.fullscreen.set(0)
+        self.fullscreen.set("0")
+
+        icon_path = pathlib.Path("resources/icon.ico")
+        self.iconbitmap(str(icon_path))
 
         self.resolution = tk.StringVar(self)
         if round(primary_monitor.width / primary_monitor.height, 2) == round(16/9, 2):
@@ -27,6 +30,8 @@ class Form(tk.Tk):
         self.bg_color = "#FFB5FD"
         self.configure(background=self.bg_color)
         self.configure_widgets()
+
+        self.good_close = False
 
     def configure_widgets(self):
         lbl = tk.Label(self, text="Elija una resolución", font=self.font, background=self.bg_color)
@@ -56,8 +61,12 @@ class Form(tk.Tk):
                            font=self.font,
                            background=self.bg_color,
                            activebackground=self.bg_color,
-                           command=self.destroy)
+                           command=self.close_window)
         accept.grid(row=2, column=0, columnspan=2, pady=10)
+
+    def close_window(self):
+        self.good_close = True
+        self.destroy()
 
     def get_data(self):
         res = self.resolution.get()

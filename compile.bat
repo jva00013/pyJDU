@@ -1,1 +1,1 @@
-pyinstaller main.py --add-data "maps;maps" --add-data "resources;resources"
+pyinstaller main.py --icon=resources/icon.ico --noconsole --onefile
