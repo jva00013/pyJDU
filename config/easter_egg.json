@@ -48,9 +48,12 @@
       "all": [
         "rulos",
         "musculosa-n",
-        "skirt-2",
         "guantes",
         "bebe-nuclear"
+      ],
+      "any": [
+        "skirt-2",
+        "vestido"
       ]
     }
   },
@@ -60,7 +63,7 @@
     "clothes": {
       "all": [
         "doraemon",
-        "doraemon2",
+        "dora_shirt",
         "short-s",
         "pantuflas"
       ]
@@ -124,7 +127,10 @@
         "broccli",
         "vendas",
         "cinto",
-        "boxeo-1",
+        "boxeo-1"
+      ],
+      "any": [
+        "trencita",
         "coletita"
       ]
     }
