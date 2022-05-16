@@ -46,14 +46,16 @@ class Actions:
             case "random":
                 # Amount of categories to select
                 self.dressing_view.click_sound.play()
-                len_categories = len(self.dressing_view.inventory.config.categories) - 1
+                self.dressing_view.jagger.remove_all()
+                categories = self.dressing_view.inventory.config.categories
+                len_categories = len(categories) - 1
                 categories_count = random.randint(0, len_categories)
                 for _ in range(categories_count):
                     category_index = random.randint(0, len_categories)
-                    category_name = self.dressing_view.inventory.config.categories[category_index]
-                    images_from_category = Enumerable(self.dressing_view.inventory.config.images)\
-                        .where(lambda x: x.category == category_name)\
-                        .select(lambda x: x.name)\
+                    category_name = categories[category_index]
+                    images_from_category = Enumerable(self.dressing_view.inventory.config.images) \
+                        .where(lambda x: x.category == category_name and x.type != "EasterEgg") \
+                        .select(lambda x: x.name) \
                         .to_list()
 
                     random_image_index = random.randint(0, len(images_from_category) - 1)

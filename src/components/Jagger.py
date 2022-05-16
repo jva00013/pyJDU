@@ -57,6 +57,10 @@ class Jagger:
         sprite_list = self.cloth_layers[category_name]
         sprite_list.clear()
 
+    def remove_all(self):
+        for sprite_list in self.cloth_layers.values():
+            sprite_list.clear()
+
     def check_if_cloth_present(self, name: str) -> bool:
         clothes_sprites = list(map(lambda x: x.sprite_list, self.cloth_layers.values()))
         value = Enumerable(clothes_sprites) \
