@@ -5,7 +5,7 @@
   <image width="1100" height="1905" source="../../../resources/interface/common/base.png"/>
  </tile>
  <tile id="3">
-  <image width="1683" height="1245" source="../../../resources/interface/common/cuadro.png"/>
+  <image width="1683" height="1245" source=''/>
  </tile>
  <tile id="4">
   <image width="1114" height="338" source="../../../resources/interface/done/restart.png"/>
@@ -15,5 +15,8 @@
  </tile>
  <tile id="6">
   <image width="1100" height="1905" source="../../../resources/interface/common/sombrita.png"/>
+ </tile>
+ <tile id="9">
+  <image width="1737" height="1206" source="../../../resources/interface/dressing/frame.png"/>
  </tile>
 </tileset>

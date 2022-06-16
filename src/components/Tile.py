@@ -44,6 +44,7 @@ class Tile:
     def check_clicked(self, position: tuple[float, float], button: int) -> bool:
         clicked_tile = arcade.get_sprites_at_point(position, self.sprite_list)
         if len(clicked_tile) <= 0:
+            #Problema al agarrar los pantalones: no se selecciona ninguna Tile. Posible error al asignar las posiciones de las Tiles.
             return False
         if button == arcade.MOUSE_BUTTON_LEFT:
             return True

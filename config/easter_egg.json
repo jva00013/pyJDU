@@ -47,12 +47,8 @@
     "clothes": {
       "all": [
         "rulos",
-        "musculosa-n",
         "guantes",
-        "bebe-nuclear"
-      ],
-      "any": [
-        "skirt-2",
+        "bebe-nuclear",
         "vestido"
       ]
     }
@@ -127,11 +123,8 @@
         "broccli",
         "vendas",
         "cinto",
-        "boxeo-1"
-      ],
-      "any": [
-        "trencita",
-        "coletita"
+        "boxeo-1",
+        "trencita"
       ]
     }
   },
