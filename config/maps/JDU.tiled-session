@@ -60,36 +60,50 @@
             "scaleInEditor": 0.12
         },
         "tmxmaps/DoneMap.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 0,
+            "expandedObjectLayers": [
+                5,
+                4,
+                2
+            ],
+            "scale": 3,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 1209.0909090909092,
-                "y": 487.8787878787879
+                "x": 221.66666666666666,
+                "y": 86.33333333333333
             }
         },
         "tmxmaps/DressingMap.tmx": {
-            "scale": 1,
-            "selectedLayer": 7,
+            "expandedObjectLayers": [
+                5
+            ],
+            "scale": 11,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 764,
-                "y": 1313
+                "x": 34.27272727272727,
+                "y": 38.45454545454545
             }
         },
         "tmxmaps/Images.tsx": {
             "scaleInDock": 1
         },
         "tmxmaps/TitleMap.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 0,
+            "expandedObjectLayers": [
+                9,
+                8,
+                6,
+                2
+            ],
+            "scale": 1.5,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 1357.5757575757575,
-                "y": 672.7272727272727
+                "x": 348,
+                "y": 151.33333333333331
             }
         }
     },
-    "last.exportedFilePath": "E:/Repositorios/pyJDU/maps",
+    "last.exportedFilePath": "C:/Users/josva/Google Drive/jDU/pyJDU/maps",
     "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
-    "last.imagePath": "E:/Repositorios/pyJDU/resources/interface/dressing",
+    "last.imagePath": "C:/Users/josva/Downloads/bugfix",
     "map.fixedSize": true,
     "map.height": 34,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",

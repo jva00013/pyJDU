@@ -4,24 +4,47 @@
  "layers":[
         {
          "draworder":"topdown",
+         "id":9,
+         "name":"video",
+         "objects":[
+                {
+                 "gid":43,
+                 "height":1100.42028985507,
+                 "id":23,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1920.40579710145,
+                 "x":-0.188405797101459,
+                 "y":1100.24637681159
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":6,
          "name":"ButtonBg",
          "objects":[
                 {
                  "gid":7,
-                 "height":166.843137254902,
+                 "height":166.843,
                  "id":21,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":336,
-                 "x":952,
-                 "y":1070.66666666667
+                 "x":797.333333333333,
+                 "y":860.003333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -32,39 +55,38 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":119.418957575758,
+                 "height":119.419,
                  "id":1,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":301.992490909091,
-                 "x":966.249933333333,
-                 "y":1048.0303030303
-                }, 
+                 "width":301.992,
+                 "x":811.583333333333,
+                 "y":837.363333333333
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":8,
+         "name":"ui",
+         "objects":[
                 {
-                 "gid":3,
-                 "height":1024,
-                 "id":3,
+                 "gid":17,
+                 "height":1079.71014492754,
+                 "id":22,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":768,
-                 "x":0,
-                 "y":1100
-                }, 
-                {
-                 "gid":4,
-                 "height":748.689,
-                 "id":8,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":864,
-                 "x":692.242424242424,
-                 "y":883.030303030303
+                 "width":1919.73913043478,
+                 "x":0.444005270092225,
+                 "y":1100.2371541502
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -72,16 +94,20 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":7,
- "nextobjectid":22,
+ "nextlayerid":10,
+ "nextobjectid":26,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.8.6",
  "tileheight":55,
  "tilesets":[
         {
          "firstgid":1,
          "source":"..\/config\/maps\/tilesets\/TitleImages.tsx"
+        }, 
+        {
+         "firstgid":8,
+         "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
         }],
  "tilewidth":64,
  "type":"map",
