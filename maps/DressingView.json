@@ -298,15 +298,15 @@
                 }, 
                 {
                  "gid":10,
-                 "height":1079.41477272727,
+                 "height":1080.96,
                  "id":70,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1920.81439393939,
-                 "x":-0.178030303030303,
-                 "y":1110.45454545455
+                 "width":1920.81,
+                 "x":-0.17803,
+                 "y":1110.45
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -485,6 +485,18 @@
                  "width":1082.8,
                  "x":384,
                  "y":925
+                }, 
+                {
+                 "gid":37,
+                 "height":999,
+                 "id":71,
+                 "name":"tuto",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1408,
+                 "x":256,
+                 "y":1073
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -493,7 +505,7 @@
          "y":0
         }],
  "nextlayerid":29,
- "nextobjectid":71,
+ "nextobjectid":72,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.6",

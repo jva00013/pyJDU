@@ -8,16 +8,16 @@
          "name":"video",
          "objects":[
                 {
-                 "gid":43,
-                 "height":1100.42028985507,
-                 "id":23,
-                 "name":"",
+                 "gid":8,
+                 "height":1276.93454545455,
+                 "id":28,
+                 "name":"titulo",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1920.40579710145,
-                 "x":-0.188405797101459,
-                 "y":1100.24637681159
+                 "width":1919.62499316678,
+                 "x":0,
+                 "y":1210
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -34,17 +34,17 @@
                  "gid":7,
                  "height":166.843,
                  "id":21,
-                 "name":"",
+                 "name":"fondo boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":336,
-                 "x":797.333333333333,
-                 "y":860.003333333333
+                 "x":797.333,
+                 "y":860.003
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -57,13 +57,13 @@
                  "gid":1,
                  "height":119.419,
                  "id":1,
-                 "name":"",
+                 "name":"boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":301.992,
-                 "x":811.583333333333,
-                 "y":837.363333333333
+                 "x":811.583,
+                 "y":837.363
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -77,16 +77,16 @@
          "name":"ui",
          "objects":[
                 {
-                 "gid":17,
-                 "height":1079.71014492754,
+                 "gid":18,
+                 "height":1080.53,
                  "id":22,
-                 "name":"",
+                 "name":"marquito",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1919.73913043478,
-                 "x":0.444005270092225,
-                 "y":1100.2371541502
+                 "width":1920.56,
+                 "x":-0.374177,
+                 "y":1100.24
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -95,7 +95,7 @@
          "y":0
         }],
  "nextlayerid":10,
- "nextobjectid":26,
+ "nextobjectid":29,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.6",
@@ -106,7 +106,7 @@
          "source":"..\/config\/maps\/tilesets\/TitleImages.tsx"
         }, 
         {
-         "firstgid":8,
+         "firstgid":9,
          "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
         }],
  "tilewidth":64,

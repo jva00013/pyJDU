@@ -73,7 +73,7 @@
  <tile id="34">
   <image width="5000" height="3472" source="../../../resources/interface/common/frame.png"/>
  </tile>
- <tile id="35">
-  <image width="634" height="422" source="../../../../../../Downloads/bugfix/pantalla inicio.gif"/>
+ <tile id="36">
+  <image width="2585" height="1912" source="../../../resources/interface/done/tuto.png"/>
  </tile>
 </tileset>

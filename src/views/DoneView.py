@@ -66,6 +66,6 @@ class DoneView(arcade.View):
             (x for x in sprites_clicked if "name" in x.properties and x.properties["name"] == "restart"), None)
         if not restart_button:
             return
-        dressing_view = DressingView.DressingView()
+        dressing_view = DressingView.DressingView(tuto=False)
         self.window.show_view(dressing_view)
         dressing_view.setup(self.sound_button, self.easter_eggs)

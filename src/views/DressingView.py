@@ -15,7 +15,7 @@ from src.components.Tile import Tile
 
 class DressingView(arcade.View):
 
-    def __init__(self):
+    def __init__(self, tuto = True):
         super().__init__()
         self.tile_dragged = None
         self.scene: arcade.Scene | None = None
@@ -31,6 +31,7 @@ class DressingView(arcade.View):
         self.click_sound: arcade.Sound | None = None
         self.sound_list: arcade.SpriteList | None = None
         self.sound_button: SoundButton | None = None
+        self.tuto = tuto
 
     def on_draw(self):
         self.clear()
@@ -78,6 +79,8 @@ class DressingView(arcade.View):
         arcade.load_font(pathlib.Path("resources/fonts/Liminality-Regular.ttf"))
         self.egg_counter = EggCounter(ui_sprites, egg_counter, self)
 
+        self.alert_manager.state_tuto(self.tuto)
+
     def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
         position = (x, y)
         self.toolbar.check_clicked(position)
@@ -89,6 +92,7 @@ class DressingView(arcade.View):
         self.alert_manager.toggle_easter_accessories(False)
         self.alert_manager.toggle_easter_top(False)
         self.alert_manager.toggle_easter_normal(False)
+        self.alert_manager.state_tuto(False)
 
         if self.sound_button.playing:
             self.sound_button.bg_music.play()
