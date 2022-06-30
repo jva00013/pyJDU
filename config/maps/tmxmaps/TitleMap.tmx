@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="64" tileheight="55" infinite="0" nextlayerid="10" nextobjectid="29">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="64" tileheight="55" infinite="0" nextlayerid="11" nextobjectid="39">
  <editorsettings>
   <export target="../../../maps/TitleView.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="../tilesets/TitleImages.tsx"/>
- <tileset firstgid="9" source="../tilesets/DressingImages.tsx"/>
+ <tileset firstgid="10" source="../tilesets/DressingImages.tsx"/>
+ <tileset firstgid="47" source="../tilesets/AnimationIntro.tsx"/>
  <objectgroup id="9" name="video">
-  <object id="28" name="titulo" gid="8" x="0" y="1210" width="1919.62" height="1276.93"/>
+  <object id="34" gid="9" x="0" y="1210" width="1920.34" height="1277.41"/>
+ </objectgroup>
+ <objectgroup id="10" name="gif">
+  <object id="37" gid="62" x="708.667" y="1102" width="439.333" height="439.333"/>
+  <object id="38" gid="47" x="777.333" y="1062" width="320" height="320" visible="0"/>
  </objectgroup>
  <objectgroup id="6" name="ButtonBg">
-  <object id="21" name="fondo boton" gid="7" x="797.333" y="860.003" width="336" height="166.843"/>
+  <object id="21" name="fondo boton" gid="7" x="809" y="938.578" width="256" height="127.118" visible="0"/>
  </objectgroup>
  <objectgroup id="2" name="Layer">
-  <object id="1" name="boton" gid="1" x="811.583" y="837.363" width="301.992" height="119.419"/>
+  <object id="1" name="boton" gid="1" x="819.857" y="921.329" width="230.089" height="90.9859"/>
  </objectgroup>
  <objectgroup id="8" name="ui">
-  <object id="22" name="marquito" gid="18" x="-0.374177" y="1100.24" width="1920.56" height="1080.53"/>
+  <object id="22" name="marquito" gid="19" x="-0.374177" y="1100.24" width="1920.56" height="1080.53"/>
  </objectgroup>
 </map>

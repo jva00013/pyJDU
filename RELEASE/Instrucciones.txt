@@ -1,0 +1,10 @@
+Instrucciones para jugar al juego:
+
+- Ejecutar el archivo VC_redist.x64.exe e instalarlo.
+
+- Ejecutar el archivo Jagger DressUp, seleccionar la resolución de la pantalla y continuar.
+
+Disfruta del juego!!
+
+Creadores: EzaleQ, STDException
+Ilustración: Neoalix

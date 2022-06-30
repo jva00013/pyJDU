@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tmxmaps/DressingMap.tmx",
+    "activeFile": "tilesets/TitleImages.tsx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "JSON map files (*.tmj *.json)",
@@ -44,6 +44,9 @@
             "scaleInDock": 0.03125,
             "scaleInEditor": 0.06
         },
+        "tilesets/AnimationIntro.tsx": {
+            "dynamicWrapping": true
+        },
         "tilesets/DoneImages.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 0.0625,
@@ -69,19 +72,19 @@
             "selectedLayer": 2,
             "viewCenter": {
                 "x": 65.36363636363636,
-                "y": 48.45454545454545
+                "y": 48.27272727272727
             }
         },
         "tmxmaps/DressingMap.tmx": {
             "expandedObjectLayers": [
-                28,
-                5
+                5,
+                28
             ],
             "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 957.3333333333334,
-                "y": 689.3333333333333
+                "x": 954.6666666666665,
+                "y": 686.6666666666666
             }
         },
         "tmxmaps/Images.tsx": {
@@ -89,19 +92,21 @@
         },
         "tmxmaps/TitleMap.tmx": {
             "expandedObjectLayers": [
-                6,
                 2,
+                6,
                 8,
-                9
+                9,
+                10
             ],
-            "scale": 0.5,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 960,
-                "y": 528
+                "x": 936,
+                "y": 866.6666666666666
             }
         }
     },
+    "frame.defaultDuration": 400,
     "last.exportedFilePath": "C:/Users/josva/Google Drive/jDU/pyJDU/maps",
     "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
     "last.imagePath": "C:/Users/josva/Google Drive/jDU/pyJDU/resources/interface/title",
@@ -114,16 +119,17 @@
         "tmxmaps/DressingMap.tmx",
         "tmxmaps/DoneMap.tmx",
         "tmxmaps/TitleMap.tmx",
-        "tilesets/DressingImages.tsx"
+        "tilesets/DressingImages.tsx",
+        "tilesets/TitleImages.tsx"
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
-        "tilesets/DressingImages.tsx",
-        "tmxmaps/TitleMap.tmx",
-        "tmxmaps/DoneMap.tmx",
         "tmxmaps/DressingMap.tmx",
-        "tilesets/DoneImages.tsx",
+        "tmxmaps/DoneMap.tmx",
+        "tmxmaps/TitleMap.tmx",
+        "tilesets/DressingImages.tsx",
         "tilesets/TitleImages.tsx",
+        "tilesets/DoneImages.tsx",
         "DoneMap.tmx",
         "DressingMap.tmx",
         "DressingImages.tsx",

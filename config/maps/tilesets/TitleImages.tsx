@@ -13,7 +13,7 @@
  <tile id="6">
   <image width="1683" height="1245" source="../../../resources/interface/common/cuadro.png"/>
  </tile>
- <tile id="7">
-  <image width="5000" height="3326" source="../../../resources/interface/Intro.png"/>
+ <tile id="8">
+  <image width="5000" height="3326" source="../../../resources/interface/title/intro.jpg"/>
  </tile>
 </tileset>
