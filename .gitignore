@@ -10,7 +10,6 @@ dist/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -338,3 +337,8 @@ RELEASE/resources/sound/done.wav
 RELEASE/resources/sound/grab.wav
 RELEASE/resources/sound/lista.wav
 RELEASE/resources/sound/reset.wav
+/RELEASE/config/maps/tilesets/AnimationIntro.tsx
+/RELEASE/resources/interface/title/Vh2_0000_Capa-2.png
+/RELEASE/resources/interface/title/Vh2_0001_Capa-1.png
+/RELEASE/resources/interface/title/heart.png
+/RELEASE/resources/interface/title/intro.jpg

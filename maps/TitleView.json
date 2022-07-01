@@ -9,13 +9,13 @@
          "objects":[
                 {
                  "gid":9,
-                 "height":1277.41226666667,
+                 "height":1277.41,
                  "id":34,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1920.34315494087,
+                 "width":1920.34,
                  "x":0,
                  "y":1210
                 }],
@@ -32,27 +32,15 @@
          "objects":[
                 {
                  "gid":62,
-                 "height":439.333333333333,
+                 "height":439.333,
                  "id":37,
-                 "name":"",
+                 "name":"heart",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":439.333333333333,
-                 "x":708.666666666667,
+                 "width":439.333,
+                 "x":708.667,
                  "y":1102
-                }, 
-                {
-                 "gid":47,
-                 "height":320,
-                 "id":38,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":false,
-                 "width":320,
-                 "x":777.333333333333,
-                 "y":1062
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -67,15 +55,15 @@
          "objects":[
                 {
                  "gid":7,
-                 "height":127.118476190476,
+                 "height":103.118,
                  "id":21,
                  "name":"fondo boton",
                  "rotation":0,
                  "type":"",
-                 "visible":false,
-                 "width":256,
-                 "x":809,
-                 "y":938.578240731151
+                 "visible":true,
+                 "width":207.666955112573,
+                 "x":833.166522443714,
+                 "y":926.578
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -90,15 +78,15 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":90.9859047619047,
+                 "height":73.8076750436602,
                  "id":1,
                  "name":"boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":230.089142857143,
-                 "x":819.857142857143,
-                 "y":921.328716921627
+                 "width":186.647976698815,
+                 "x":841.973710458,
+                 "y":912.585627700247
                 }],
          "opacity":1,
          "type":"objectgroup",

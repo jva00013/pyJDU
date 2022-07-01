@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tilesets/TitleImages.tsx",
+    "activeFile": "tmxmaps/TitleMap.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "JSON map files (*.tmj *.json)",
@@ -45,34 +45,36 @@
             "scaleInEditor": 0.06
         },
         "tilesets/AnimationIntro.tsx": {
-            "dynamicWrapping": true
+            "dynamicWrapping": true,
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.25
         },
         "tilesets/DoneImages.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.0625,
+            "scaleInDock": 0.06,
             "scaleInEditor": 0.125
         },
         "tilesets/DressingImages.tsx": {
             "dynamicWrapping": true,
-            "scaleInDock": 0.015625,
-            "scaleInEditor": 0.03
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.25
         },
         "tilesets/TitleImages.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.0625,
-            "scaleInEditor": 0.12
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.25
         },
         "tmxmaps/DoneMap.tmx": {
             "expandedObjectLayers": [
-                2,
+                5,
                 4,
-                5
+                2
             ],
             "scale": 11,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 65.36363636363636,
-                "y": 48.27272727272727
+                "x": 960,
+                "y": 543.9545454545455
             }
         },
         "tmxmaps/DressingMap.tmx": {
@@ -83,8 +85,8 @@
             "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 954.6666666666665,
-                "y": 686.6666666666666
+                "x": 960,
+                "y": 554
             }
         },
         "tmxmaps/Images.tsx": {
@@ -92,17 +94,17 @@
         },
         "tmxmaps/TitleMap.tmx": {
             "expandedObjectLayers": [
-                2,
+                10,
                 6,
-                8,
+                2,
                 9,
-                10
+                8
             ],
-            "scale": 0.75,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 936,
-                "y": 866.6666666666666
+                "x": 995,
+                "y": 941
             }
         }
     },
@@ -120,15 +122,17 @@
         "tmxmaps/DoneMap.tmx",
         "tmxmaps/TitleMap.tmx",
         "tilesets/DressingImages.tsx",
-        "tilesets/TitleImages.tsx"
+        "tilesets/TitleImages.tsx",
+        "tilesets/AnimationIntro.tsx"
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
         "tmxmaps/DressingMap.tmx",
         "tmxmaps/DoneMap.tmx",
-        "tmxmaps/TitleMap.tmx",
-        "tilesets/DressingImages.tsx",
+        "tilesets/AnimationIntro.tsx",
         "tilesets/TitleImages.tsx",
+        "tilesets/DressingImages.tsx",
+        "tmxmaps/TitleMap.tmx",
         "tilesets/DoneImages.tsx",
         "DoneMap.tmx",
         "DressingMap.tmx",
