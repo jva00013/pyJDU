@@ -295,18 +295,6 @@
                  "width":32.7223,
                  "x":1850.12,
                  "y":556.576
-                }, 
-                {
-                 "gid":10,
-                 "height":1080.96,
-                 "id":70,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":1920.81,
-                 "x":-0.17803,
-                 "y":1110.45
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -493,10 +481,45 @@
                  "name":"tuto",
                  "rotation":0,
                  "type":"",
-                 "visible":true,
+                 "visible":false,
                  "width":1408,
                  "x":256,
                  "y":1073
+                }, 
+                {
+                 "gid":211,
+                 "height":1073,
+                 "id":73,
+                 "name":"confeti",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":1609.5,
+                 "x":162,
+                 "y":1110
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":29,
+         "name":"marco",
+         "objects":[
+                {
+                 "gid":10,
+                 "height":1080,
+                 "id":70,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1920,
+                 "x":-0.000252222222221959,
+                 "y":1110.00555555556
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -504,8 +527,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":29,
- "nextobjectid":72,
+ "nextlayerid":30,
+ "nextobjectid":74,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.8.6",
@@ -514,6 +537,10 @@
         {
          "firstgid":1,
          "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
+        }, 
+        {
+         "firstgid":38,
+         "source":"..\/config\/maps\/tilesets\/confeti.tsx"
         }],
  "tilewidth":64,
  "type":"map",

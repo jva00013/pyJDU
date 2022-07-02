@@ -61,8 +61,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":207.666955112573,
-                 "x":833.166522443714,
+                 "width":207.667,
+                 "x":833.167,
                  "y":926.578
                 }],
          "opacity":1,
@@ -78,15 +78,15 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":73.8076750436602,
+                 "height":73.8077,
                  "id":1,
                  "name":"boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":186.647976698815,
-                 "x":841.973710458,
-                 "y":912.585627700247
+                 "width":186.648,
+                 "x":841.974,
+                 "y":912.586
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -101,14 +101,14 @@
          "objects":[
                 {
                  "gid":19,
-                 "height":1080.53,
+                 "height":1080,
                  "id":22,
                  "name":"marquito",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1920.56,
-                 "x":-0.374177,
+                 "width":1920,
+                 "x":-0.00056588888886866,
                  "y":1100.24
                 }],
          "opacity":1,

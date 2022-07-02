@@ -79,15 +79,15 @@
                 }, 
                 {
                  "gid":20,
-                 "height":1079.53636363636,
+                 "height":1080,
                  "id":8,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1920.24,
-                 "x":-0.228539,
-                 "y":1088.02
+                 "width":1920,
+                 "x":0,
+                 "y":1088
                 }],
          "opacity":1,
          "type":"objectgroup",

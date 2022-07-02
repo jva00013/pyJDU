@@ -19,6 +19,6 @@
   <object id="1" name="boton" gid="1" x="841.974" y="912.586" width="186.648" height="73.8077"/>
  </objectgroup>
  <objectgroup id="8" name="ui">
-  <object id="22" name="marquito" gid="19" x="-0.374177" y="1100.24" width="1920.56" height="1080.53"/>
+  <object id="22" name="marquito" gid="19" x="-0.000565889" y="1100.24" width="1920" height="1080"/>
  </objectgroup>
 </map>

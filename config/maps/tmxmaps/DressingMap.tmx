@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="37" infinite="0" nextlayerid="29" nextobjectid="72">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="37" infinite="0" nextlayerid="30" nextobjectid="74">
  <editorsettings>
   <export target="../../../maps/DressingView.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="../tilesets/DressingImages.tsx"/>
+ <tileset firstgid="38" source="../tilesets/confeti.tsx"/>
  <objectgroup id="6" name="cloth_background"/>
  <objectgroup id="4" name="jagger_shadow">
   <object id="3" gid="21" x="96" y="1108" width="628.686" height="1088"/>
@@ -37,7 +38,6 @@
   </object>
   <object id="49" name="previous_page" type="inventory" gid="8" x="1010.67" y="556.333" width="30.2366" height="37"/>
   <object id="50" name="next_page" type="inventory" gid="9" x="1850.12" y="556.576" width="32.7223" height="40.5757"/>
-  <object id="70" gid="10" x="-0.17803" y="1110.45" width="1920.81" height="1080.96"/>
  </objectgroup>
  <objectgroup id="27" name="ui_tile">
   <object id="11" gid="10" x="1109.33" y="506" width="120" height="213.333"/>
@@ -55,6 +55,10 @@
   <object id="67" name="easter_normal" gid="34" x="384" y="925" width="1100.37" height="814" visible="0"/>
   <object id="68" name="easter_top" gid="33" x="384" y="925" width="1082.8" height="801" visible="0"/>
   <object id="69" name="easter_accessories" gid="32" x="384" y="925" width="1082.8" height="801" visible="0"/>
-  <object id="71" name="tuto" gid="37" x="256" y="1073" width="1408" height="999"/>
+  <object id="71" name="tuto" gid="37" x="256" y="1073" width="1408" height="999" visible="0"/>
+  <object id="73" name="confeti" gid="211" x="162" y="1110" width="1609.5" height="1073" visible="0"/>
+ </objectgroup>
+ <objectgroup id="29" name="marco">
+  <object id="70" gid="10" x="-0.000252222" y="1110.01" width="1920" height="1080"/>
  </objectgroup>
 </map>

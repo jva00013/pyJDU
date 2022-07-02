@@ -28,7 +28,10 @@ class TitleView(arcade.View):
 
         layer_options = {
             "gif": {
-                "custom_class": Heart
+                "custom_class": Heart,
+                "custom_class_args": {
+                        "width": self.window.width
+                    },
             },
         }
 
@@ -38,7 +41,6 @@ class TitleView(arcade.View):
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
         self.start_button = self.scene["ButtonBg"]
         self.heart = self.scene["gif"]
-        
         self.sound_sprite_list = arcade.SpriteList()
         
         self.sound_button = SoundButton()

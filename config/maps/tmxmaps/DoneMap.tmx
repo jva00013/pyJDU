@@ -14,6 +14,6 @@
  </objectgroup>
  <objectgroup id="5" name="jagger">
   <object id="4" name="base" gid="30" x="704" y="1056" width="628.686" height="1088"/>
-  <object id="8" gid="20" x="-0.228539" y="1088.02" width="1920.24" height="1079.54"/>
+  <object id="8" gid="20" x="0" y="1088" width="1920" height="1080"/>
  </objectgroup>
 </map>

@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tmxmaps/TitleMap.tmx",
+    "activeFile": "tmxmaps/DressingMap.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "JSON map files (*.tmj *.json)",
@@ -66,15 +66,15 @@
         },
         "tmxmaps/DoneMap.tmx": {
             "expandedObjectLayers": [
-                5,
+                2,
                 4,
-                2
+                5
             ],
-            "scale": 11,
+            "scale": 0.125,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 960,
-                "y": 543.9545454545455
+                "x": 2960,
+                "y": 1072
             }
         },
         "tmxmaps/DressingMap.tmx": {
@@ -82,11 +82,11 @@
                 5,
                 28
             ],
-            "scale": 0.75,
-            "selectedLayer": 7,
+            "scale": 0.5,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 960,
-                "y": 554
+                "x": 1022,
+                "y": 892
             }
         },
         "tmxmaps/Images.tsx": {
@@ -94,24 +94,24 @@
         },
         "tmxmaps/TitleMap.tmx": {
             "expandedObjectLayers": [
-                10,
-                6,
                 2,
+                6,
+                8,
                 9,
-                8
+                10
             ],
-            "scale": 1,
+            "scale": 0.75,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 995,
-                "y": 941
+                "x": 929.3333333333334,
+                "y": 441.3333333333333
             }
         }
     },
-    "frame.defaultDuration": 400,
+    "frame.defaultDuration": 15,
     "last.exportedFilePath": "C:/Users/josva/Google Drive/jDU/pyJDU/maps",
     "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
-    "last.imagePath": "C:/Users/josva/Google Drive/jDU/pyJDU/resources/interface/title",
+    "last.imagePath": "C:/Users/josva/Google Drive/jDU/pyJDU/resources/interface/dressing/confeti1",
     "map.fixedSize": true,
     "map.height": 34,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
@@ -127,12 +127,12 @@
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
-        "tmxmaps/DressingMap.tmx",
-        "tmxmaps/DoneMap.tmx",
         "tilesets/AnimationIntro.tsx",
         "tilesets/TitleImages.tsx",
         "tilesets/DressingImages.tsx",
         "tmxmaps/TitleMap.tmx",
+        "tmxmaps/DoneMap.tmx",
+        "tmxmaps/DressingMap.tmx",
         "tilesets/DoneImages.tsx",
         "DoneMap.tmx",
         "DressingMap.tmx",
