@@ -2,6 +2,7 @@ import arcade.gui
 import arcade
 import pathlib
 
+from src.components.Confeti import Confeti
 from src.components.Actions import Actions
 from src.components.Alert import Alert
 from src.components.EggCounter import EggCounter
@@ -31,6 +32,7 @@ class DressingView(arcade.View):
         self.click_sound: arcade.Sound | None = None
         self.sound_list: arcade.SpriteList | None = None
         self.sound_button: SoundButton | None = None
+        self.confeti: arcade.SpriteList | None = None
         self.tuto = tuto
 
     def on_draw(self):
@@ -42,6 +44,7 @@ class DressingView(arcade.View):
 
     def on_update(self, delta_time: float):
         self.egg_counter.check_easters()
+        self.confeti.update()
 
     def setup(self, sound_button: SoundButton, egg_counter=None):
         if egg_counter is None:
@@ -53,9 +56,21 @@ class DressingView(arcade.View):
 
         scale = Utils.get_scale(self.window.width, self.window.height)
         map_path = pathlib.Path("maps/DressingView.json")
-        self.tile_map = arcade.load_tilemap(map_path, scaling=scale, hit_box_algorithm="None")
-        self.scene = arcade.Scene.from_tilemap(self.tile_map)
 
+        layer_options = {
+            "gif": {
+                "custom_class": Confeti,
+                "custom_class_args": {
+                        "width": self.window.width
+                    },
+            },
+        }
+
+
+        self.tile_map = arcade.load_tilemap(map_path, scaling=scale, layer_options=layer_options, hit_box_algorithm="None")
+        self.scene = arcade.Scene.from_tilemap(self.tile_map)
+        self.confeti = self.scene["gif"]
+        self.confeti.visible = False
         alert_sprites = self.scene.get_sprite_list("alerts")
         self.alert_manager = Alert(alert_sprites)
 
@@ -98,6 +113,7 @@ class DressingView(arcade.View):
             self.sound_button.bg_music.play()
         self.alert_manager.applause_sound.pause()
         self.alert_manager.done_eggs.visible = False
+        self.confeti.visible = False
 
     def on_mouse_motion(self, x: float, y: float, dx: float, dy: float):
         if not self.tile_dragged:

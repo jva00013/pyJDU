@@ -6,6 +6,7 @@ from src.components.Heart import Heart
 from src.components.SoundButton import SoundButton
 from src.utils import Utils
 from src.views.DressingView import DressingView
+import pyglet
 
 
 class TitleView(arcade.View):
@@ -23,6 +24,11 @@ class TitleView(arcade.View):
         super().__init__()
         self.sound_sprite_list: arcade.SpriteList | None = None
         self.sound_button: SoundButton | None = None
+
+    
+        # image = pyglet.image.load('resources\cursor.png')
+        # cursor = pyglet.window.ImageMouseCursor(image, 0, 0)
+        # self.window.set_mouse_cursor(cursor)
 
     def setup(self):
 
