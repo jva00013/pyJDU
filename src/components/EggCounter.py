@@ -46,6 +46,7 @@ class EggCounter:
         self.easter_eggs.add(name)
         if self.is_completed():
             self.dressing_view.sound_button.bg_music.pause()
+            self.dressing_view.confeti.visible = True
             self.dressing_view.alert_manager.show_done_eggs()
             return
         else:

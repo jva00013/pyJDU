@@ -3,10 +3,10 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tmxmaps/DressingMap.tmx",
+    "activeFile": "tilesets/confeti.tsx",
     "expandedProjectPaths": [
     ],
-    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "file.lastUsedOpenFilter": "JSON map files (*.tmj *.json)",
     "fileStates": {
         "": {
             "scaleInDock": 0.03125
@@ -44,52 +44,86 @@
             "scaleInDock": 0.03125,
             "scaleInEditor": 0.06
         },
+        "tilesets/AnimationIntro.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.33
+        },
         "tilesets/DoneImages.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.0625,
+            "scaleInDock": 0.06,
             "scaleInEditor": 0.125
         },
         "tilesets/DressingImages.tsx": {
             "dynamicWrapping": true,
-            "scaleInDock": 0.015625,
-            "scaleInEditor": 0.03
+            "scaleInDock": 0.33,
+            "scaleInEditor": 0.03125
         },
         "tilesets/TitleImages.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.0625,
-            "scaleInEditor": 0.12
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.33
+        },
+        "tilesets/confeti.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.33,
+            "scaleInEditor": 0.33
+        },
+        "tilesets/confeti1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
         },
         "tmxmaps/DoneMap.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 0,
+            "expandedObjectLayers": [
+                4,
+                5,
+                2
+            ],
+            "scale": 0.125,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 1209.0909090909092,
-                "y": 487.8787878787879
+                "x": 2944,
+                "y": 1072
             }
         },
         "tmxmaps/DressingMap.tmx": {
-            "scale": 1,
-            "selectedLayer": 7,
+            "expandedObjectLayers": [
+                28,
+                29,
+                5,
+                30
+            ],
+            "scale": 0.5,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 764,
-                "y": 1313
+                "x": 960,
+                "y": 858
             }
         },
         "tmxmaps/Images.tsx": {
             "scaleInDock": 1
         },
         "tmxmaps/TitleMap.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 0,
+            "expandedObjectLayers": [
+                10,
+                8,
+                9,
+                6,
+                2
+            ],
+            "scale": 0.75,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 1357.5757575757575,
-                "y": 672.7272727272727
+                "x": 858.6666666666666,
+                "y": 550
             }
         }
     },
-    "last.exportedFilePath": "E:/Repositorios/pyJDU/maps",
+    "frame.defaultDuration": 50,
+    "last.exportedFilePath": "C:/Users/josva/Google Drive/jDU/pyJDU/maps",
     "last.externalTilesetPath": "F:/TestingSoftware/Games/pyJDU/config/maps/tilesets",
-    "last.imagePath": "E:/Repositorios/pyJDU/resources/interface/dressing",
+    "last.imagePath": "C:/Users/josva/Google Drive/jDU/pyJDU/resources/interface/dressing/confeti1",
     "map.fixedSize": true,
     "map.height": 34,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
@@ -97,20 +131,28 @@
     "map.width": 60,
     "openFiles": [
         "tmxmaps/DressingMap.tmx",
-        "tilesets/DressingImages.tsx"
+        "tmxmaps/DoneMap.tmx",
+        "tmxmaps/TitleMap.tmx",
+        "tilesets/DressingImages.tsx",
+        "tilesets/TitleImages.tsx",
+        "tilesets/AnimationIntro.tsx",
+        "tilesets/confeti.tsx",
+        "tilesets/confeti1.tsx"
     ],
     "project": "JDU.tiled-project",
     "recentFiles": [
-        "tilesets/DressingImages.tsx",
         "tmxmaps/DressingMap.tmx",
         "tmxmaps/DoneMap.tmx",
-        "tilesets/DoneImages.tsx",
-        "tilesets/TitleImages.tsx",
         "tmxmaps/TitleMap.tmx",
+        "tilesets/DressingImages.tsx",
+        "tilesets/TitleImages.tsx",
+        "tilesets/AnimationIntro.tsx",
+        "tilesets/confeti1.tsx",
+        "tilesets/confeti.tsx",
+        "tilesets/DoneImages.tsx",
         "DoneMap.tmx",
         "DressingMap.tmx",
-        "DressingImages.tsx",
-        "Images.tsx"
+        "DressingImages.tsx"
     ],
     "resizeMap.removeObjects": false,
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",

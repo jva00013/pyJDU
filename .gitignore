@@ -10,7 +10,6 @@ dist/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -124,3 +123,4 @@ dmypy.json
 .pyre/
 
 *env/
+RELEASE/*

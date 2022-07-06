@@ -49,10 +49,8 @@ class Actions:
                 self.dressing_view.jagger.remove_all()
                 categories = self.dressing_view.inventory.config.categories
                 len_categories = len(categories) - 1
-                categories_count = random.randint(0, len_categories)
-                for _ in range(categories_count):
-                    category_index = random.randint(0, len_categories)
-                    category_name = categories[category_index]
+                for _ in range(len_categories):
+                    category_name = categories[_]
                     images_from_category = Enumerable(self.dressing_view.inventory.config.images) \
                         .where(lambda x: x.category == category_name and x.type != "EasterEgg") \
                         .select(lambda x: x.name) \
@@ -62,4 +60,5 @@ class Actions:
                     image_name = images_from_category[random_image_index]
 
                     image = Enumerable(self.dressing_view.inventory.images).first(lambda x: image_name in x.filename)
+
                     self.dressing_view.jagger.set_cloth(image, category_name)

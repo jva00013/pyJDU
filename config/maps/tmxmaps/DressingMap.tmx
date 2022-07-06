@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="37" infinite="0" nextlayerid="29" nextobjectid="70">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="37" infinite="0" nextlayerid="31" nextobjectid="77">
  <editorsettings>
   <export target="../../../maps/DressingView.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="../tilesets/DressingImages.tsx"/>
+ <tileset firstgid="38" source="../tilesets/confeti.tsx"/>
+ <tileset firstgid="286" source="../tilesets/confeti1.tsx"/>
  <objectgroup id="6" name="cloth_background"/>
  <objectgroup id="4" name="jagger_shadow">
   <object id="3" gid="21" x="96" y="1108" width="628.686" height="1088"/>
@@ -50,9 +52,16 @@
  </objectgroup>
  <objectgroup id="28" name="alerts">
   <object id="55" name="lista" gid="18" x="64" y="851" width="512" height="563.752" visible="0"/>
-  <object id="57" name="done_eggs" gid="26" x="384" y="999" width="1216" height="899.417" visible="0"/>
+  <object id="57" name="done_eggs" gid="26" x="384" y="999" width="1216" height="899.417"/>
   <object id="67" name="easter_normal" gid="34" x="384" y="925" width="1100.37" height="814" visible="0"/>
   <object id="68" name="easter_top" gid="33" x="384" y="925" width="1082.8" height="801" visible="0"/>
   <object id="69" name="easter_accessories" gid="32" x="384" y="925" width="1082.8" height="801" visible="0"/>
+  <object id="71" name="tuto" gid="37" x="256" y="1073" width="1408" height="999" visible="0"/>
+ </objectgroup>
+ <objectgroup id="30" name="gif">
+  <object id="73" name="confeti" gid="211" x="320" y="999" width="1344" height="896"/>
+ </objectgroup>
+ <objectgroup id="29" name="marco">
+  <object id="70" gid="10" x="-0.000252222" y="1110.01" width="1920" height="1080"/>
  </objectgroup>
 </map>

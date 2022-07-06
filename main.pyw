@@ -1,5 +1,6 @@
 import arcade
 
+
 from src.resolution_tk import Form
 from src.views import TitleView
 
@@ -13,6 +14,7 @@ class Game:
                                          center_window=True,
                                          fullscreen=fullscreen,
                                          title="Jagger Dress Up")
+        
 
     def run(self):
         arcade.set_background_color((255, 181, 253))

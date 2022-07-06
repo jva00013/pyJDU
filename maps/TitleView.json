@@ -4,20 +4,66 @@
  "layers":[
         {
          "draworder":"topdown",
+         "id":9,
+         "name":"video",
+         "objects":[
+                {
+                 "gid":9,
+                 "height":1277.41,
+                 "id":34,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1920.34,
+                 "x":0,
+                 "y":1210
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":10,
+         "name":"gif",
+         "objects":[
+                {
+                 "gid":62,
+                 "height":439.333,
+                 "id":37,
+                 "name":"heart",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":439.333,
+                 "x":708.667,
+                 "y":1102
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":6,
          "name":"ButtonBg",
          "objects":[
                 {
                  "gid":7,
-                 "height":166.843137254902,
+                 "height":103.118,
                  "id":21,
-                 "name":"",
+                 "name":"fondo boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":336,
-                 "x":952,
-                 "y":1070.66666666667
+                 "width":207.667,
+                 "x":833.167,
+                 "y":926.578
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -32,39 +78,38 @@
          "objects":[
                 {
                  "gid":1,
-                 "height":119.418957575758,
+                 "height":73.8077,
                  "id":1,
-                 "name":"",
+                 "name":"boton",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":301.992490909091,
-                 "x":966.249933333333,
-                 "y":1048.0303030303
-                }, 
+                 "width":186.648,
+                 "x":841.974,
+                 "y":912.586
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":8,
+         "name":"ui",
+         "objects":[
                 {
-                 "gid":3,
-                 "height":1024,
-                 "id":3,
-                 "name":"",
+                 "gid":19,
+                 "height":1080,
+                 "id":22,
+                 "name":"marquito",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":768,
-                 "x":0,
-                 "y":1100
-                }, 
-                {
-                 "gid":4,
-                 "height":748.689,
-                 "id":8,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":864,
-                 "x":692.242424242424,
-                 "y":883.030303030303
+                 "width":1920,
+                 "x":-0.00056588888886866,
+                 "y":1100.24
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -72,16 +117,24 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":7,
- "nextobjectid":22,
+ "nextlayerid":11,
+ "nextobjectid":39,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.8.6",
  "tileheight":55,
  "tilesets":[
         {
          "firstgid":1,
          "source":"..\/config\/maps\/tilesets\/TitleImages.tsx"
+        }, 
+        {
+         "firstgid":10,
+         "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
+        }, 
+        {
+         "firstgid":47,
+         "source":"..\/config\/maps\/tilesets\/AnimationIntro.tsx"
         }],
  "tilewidth":64,
  "type":"map",

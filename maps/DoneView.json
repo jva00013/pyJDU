@@ -66,7 +66,7 @@
          "name":"jagger",
          "objects":[
                 {
-                 "gid":27,
+                 "gid":30,
                  "height":1088,
                  "id":4,
                  "name":"base",
@@ -76,6 +76,18 @@
                  "width":628.686,
                  "x":704,
                  "y":1056
+                }, 
+                {
+                 "gid":20,
+                 "height":1080,
+                 "id":8,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1920,
+                 "x":0,
+                 "y":1088
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -84,10 +96,10 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":8,
+ "nextobjectid":9,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.8.6",
  "tileheight":32,
  "tilesets":[
         {
@@ -95,7 +107,7 @@
          "source":"..\/config\/maps\/tilesets\/DoneImages.tsx"
         }, 
         {
-         "firstgid":8,
+         "firstgid":11,
          "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
         }],
  "tilewidth":32,

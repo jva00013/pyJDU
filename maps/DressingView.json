@@ -433,7 +433,7 @@
                  "name":"done_eggs",
                  "rotation":0,
                  "type":"",
-                 "visible":false,
+                 "visible":true,
                  "width":1216,
                  "x":384,
                  "y":999
@@ -446,7 +446,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":false,
-                 "width":1100.37108433735,
+                 "width":1100.37,
                  "x":384,
                  "y":925
                 }, 
@@ -458,7 +458,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":false,
-                 "width":1082.79759036145,
+                 "width":1082.8,
                  "x":384,
                  "y":925
                 }, 
@@ -470,9 +470,67 @@
                  "rotation":0,
                  "type":"",
                  "visible":false,
-                 "width":1082.79759036145,
+                 "width":1082.8,
                  "x":384,
                  "y":925
+                }, 
+                {
+                 "gid":37,
+                 "height":999,
+                 "id":71,
+                 "name":"tuto",
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":1408,
+                 "x":256,
+                 "y":1073
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":30,
+         "name":"gif",
+         "objects":[
+                {
+                 "gid":211,
+                 "height":896.000368421053,
+                 "id":73,
+                 "name":"confeti",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1344,
+                 "x":320,
+                 "y":999
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":29,
+         "name":"marco",
+         "objects":[
+                {
+                 "gid":10,
+                 "height":1080,
+                 "id":70,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1920,
+                 "x":-0.000252222,
+                 "y":1110.01
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -480,16 +538,24 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":29,
- "nextobjectid":70,
+ "nextlayerid":31,
+ "nextobjectid":77,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.8.6",
  "tileheight":37,
  "tilesets":[
         {
          "firstgid":1,
          "source":"..\/config\/maps\/tilesets\/DressingImages.tsx"
+        }, 
+        {
+         "firstgid":38,
+         "source":"..\/config\/maps\/tilesets\/confeti.tsx"
+        }, 
+        {
+         "firstgid":286,
+         "source":"..\/config\/maps\/tilesets\/confeti1.tsx"
         }],
  "tilewidth":64,
  "type":"map",

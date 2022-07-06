@@ -17,6 +17,8 @@ class Alert:
         self.list: arcade.Sprite = Enumerable(self.alert_sprites).first(lambda x: x.properties["name"] == "lista")
         self.done_eggs: arcade.Sprite = Enumerable(self.alert_sprites).first(
             lambda x: x.properties["name"] == "done_eggs")
+        self.tuto: arcade.Sprite = Enumerable(self.alert_sprites).first(
+            lambda x: x.properties["name"] == "tuto")
         self.applause_sound = arcade.load_sound(pathlib.Path("resources/sound/aplausos.mp3")).play()
         self.applause_sound.pause()
 
@@ -25,6 +27,7 @@ class Alert:
         self.easter_accessories.visible = False
         self.list.visible = False
         self.done_eggs.visible = False
+        self.tuto.visible = True
 
     def toggle_list(self):
         self.list.visible = not self.list.visible
@@ -42,3 +45,5 @@ class Alert:
         self.done_eggs.visible = True
         self.applause_sound.play()
 
+    def state_tuto(self, value):
+        self.tuto.visible = value
